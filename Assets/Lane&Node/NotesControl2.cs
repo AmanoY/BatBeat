@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NotesControl2 : MonoBehaviour {
+public class NotesControl2 : MonoBehaviour
+{
     Vector3 InitialPosition = new Vector3(0, 0, 0);
     // Use this for initialization
     void Start()
@@ -20,6 +21,7 @@ public class NotesControl2 : MonoBehaviour {
         }
 
     }
+    /*
     //判定の検出
     public void OnTriggerStay2D(Collider2D collision)
     {
@@ -57,5 +59,42 @@ public class NotesControl2 : MonoBehaviour {
             }
         }
         
+    }
+    */
+    public void DestroyObject2()
+    {
+        //縦横のpositionを検出する
+        if (transform.position.x <= -5.5 && transform.position.x >= -6.5 &&
+            transform.position.y >= 1.0 && transform.position.y <= 4.0)
+        {
+            //perfectの判定
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("perfect1");
+                Destroy(gameObject);
+            }
+        }
+
+        if (transform.position.x <= -4.5 && transform.position.x >= -5.49 &&
+            transform.position.y >= 1.0 && transform.position.y <= 4.0)
+        {
+            //goodの判定
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("good1");
+                Destroy(gameObject);
+            }
+        }
+
+        if (transform.position.x <= -3.5 && transform.position.x >= -4.49 &&
+            transform.position.y >= 1.0 && transform.position.y <= 4.0)
+        {
+            //ミスの判定
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("ミス1");
+                Destroy(gameObject);
+            }
+        }
     }
 }
