@@ -18,7 +18,6 @@ public class LaneControl1 : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("押されたよ1");
-            Destry.DestroyObject1();
         }
     }
 }
