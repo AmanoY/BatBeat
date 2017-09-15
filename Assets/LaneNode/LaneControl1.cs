@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class LaneControl1 : MonoBehaviour {
-     NotesControl1 Destry;
 	// Use this for initialization
 	void Start () {
-        Destry = GameObject.FindObjectOfType<NotesControl1>();
     }
 	
 	// Update is called once per frame

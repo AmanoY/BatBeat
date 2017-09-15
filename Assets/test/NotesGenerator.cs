@@ -5,6 +5,7 @@ public class NotesGenerator : MonoBehaviour
 {
     float timer = 0.0f;
 
+    //Notesを発生させる時間
     float[] timing =
     {
 3.436527f,
@@ -234,24 +235,32 @@ public class NotesGenerator : MonoBehaviour
     };
 
     public GameObject notesPrefab;
+    // NotesControl1 Notes;
 
     // Use this for initialization
     void Start()
     {
-
+     //   Notes = GameObject.FindObjectOfType<NotesControl1>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //timerに時間を加算させ続ける
         timer += Time.deltaTime;
+
+        //Notesを呼び出す
         for (int i = 0; i < timing.Length; i++)
         {
+
             if (timing[i] >= timer - Time.deltaTime / 2 && timing[i] <= timer + Time.deltaTime / 2)
             {
+
                 GameObject go = Instantiate(notesPrefab);
+                // Notes.UpperRight();
                 go.name = "notes" + timer;
             }
+
         }
     }
 }

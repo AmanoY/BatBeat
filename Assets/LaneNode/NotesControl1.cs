@@ -14,7 +14,7 @@ public class NotesControl1 : MonoBehaviour {
     void Update()
     {
         //transform.Translate(xspeed,yspeed, 0.0f);     //左上
-        transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
+        transform.Translate(xspeed, yspeed, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
             Destroy(gameObject);    //画面外に出たら消す
@@ -25,28 +25,31 @@ public class NotesControl1 : MonoBehaviour {
     //左上に進むクラス
     public void UpperLeft()
     {
-        xspeed += -0.1f;
-        yspeed += 0.05f;
+        Debug.Log(1);
+        xspeed = -0.1f;
+        yspeed = 0.05f;
+
     }
 
     //右上に進むクラス
     public void UpperRight()
     {
-        xspeed += 0.1f;
-        yspeed += 0.05f;
+        Debug.Log(2);
+        xspeed = 0.1f;
+        yspeed = 0.05f;
     }
 
     //左下に進むクラス
     public void BottomLeft()
     {
-        xspeed += -0.1f;
-        yspeed += -0.05f;
+        xspeed = -0.1f;
+        yspeed = -0.05f;
     }
 
     //右下に進むクラス
     public void BottomRight()
     {
-        xspeed += 0.1f;
-        yspeed += -0.05f;
+        xspeed = 0.1f;
+        yspeed = -0.05f;
     }
 }
