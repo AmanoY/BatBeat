@@ -14,7 +14,7 @@ public class NotesControl1 : MonoBehaviour {
     void Update()
     {
         //transform.Translate(xspeed,yspeed, 0.0f);     //左上
-        transform.Translate(xspeed, yspeed, 0.0f);     //左上
+        transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
             Destroy(gameObject);    //画面外に出たら消す

@@ -258,7 +258,6 @@ public class NotesGenerator : MonoBehaviour
 
                 GameObject go = Instantiate(notesPrefab);
                 // Notes.UpperRight();
-                go.name = "notes" + timer;
             }
 
         }
