@@ -10,7 +10,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: BatBeat1.0
+  productName: BatBeat
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -96,9 +96,9 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: 8f7b60076394b824c9ef5d06e665c2e5
+  productGUID: d43a2ae629becce48a96d267f451cf09
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 16
+  AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
@@ -325,14 +325,14 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-  metroPackageName: BatBeat1.0
+  metroPackageName: BatBeat
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: BatBeat1.0
+  metroApplicationDescription: BatBeat
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -410,46 +410,12 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
-  - Android::ScriptingBackend
-  - Metro::ScriptingBackend
-  - Standalone::ScriptingBackend
-  - WebGL::ScriptingBackend
-  - WebGL::audioCompressionFormat
-  - WebGL::exceptionSupport
-  - WebGL::memorySize
-  - iOS::Architecture
-  - iOS::EnableIncrementalBuildSupportForIl2cpp
-  - iOS::ScriptingBackend
-  - tvOS::Architecture
-  - tvOS::EnableIncrementalBuildSupportForIl2cpp
-  - tvOS::ScriptingBackend
-  Android::ScriptingBackend: 0
-  Metro::ScriptingBackend: 2
-  Standalone::ScriptingBackend: 0
-  WebGL::ScriptingBackend: 1
-  WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 1
-  WebGL::memorySize: 256
-  iOS::Architecture: 2
-  iOS::EnableIncrementalBuildSupportForIl2cpp: 1
-  iOS::ScriptingBackend: 1
-  tvOS::Architecture: 1
-  tvOS::EnableIncrementalBuildSupportForIl2cpp: 0
-  tvOS::ScriptingBackend: 1
+  - WebPlayer::ScriptingBackend
+  WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
-  - WebGL::analyzeBuildSize
-  - WebGL::dataCaching
-  - WebGL::useEmbeddedResources
-  WebGL::analyzeBuildSize: 0
-  WebGL::dataCaching: 0
-  WebGL::useEmbeddedResources: 0
-  stringPropertyNames:
-  - WebGL::emscriptenArgs
-  - WebGL::template
-  - additionalIl2CppArgs::additionalIl2CppArgs
-  WebGL::emscriptenArgs: 
-  WebGL::template: APPLICATION:Default
-  additionalIl2CppArgs::additionalIl2CppArgs: 
+  - XboxOne::enus
+  XboxOne::enus: 1
+  stringPropertyNames: []
   cloudProjectId: 
   projectName: 
   organizationId: 
