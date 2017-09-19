@@ -37,7 +37,7 @@ public class TouchManager : MonoBehaviour
 
     public void RangeDetection()
     {
-        Vector2 p1=transform
+        
     }
 
     // Use this for initialization
