@@ -4,12 +4,15 @@ using System.Collections;
 public class TouchManager : MonoBehaviour
 {
     bool touched;
+    public GameObject NodePre;
     private void OnTriggerStay2D(Collider2D collision)
     {
+        
         //押している最中は削除
         if (touched)
         {
             Destroy(collision.gameObject);
+            touched = false;
         }
     }
 
@@ -18,8 +21,9 @@ public class TouchManager : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
-        Debug.Log("クリックされた" + gameObject.name);
+        //Debug.Log("クリックされた" + gameObject.name);
         touched = true;
+
     }
 
     /// <summary>
@@ -31,6 +35,10 @@ public class TouchManager : MonoBehaviour
     }
 
 
+    public void RangeDetection()
+    {
+        Vector2 p1=transform
+    }
 
     // Use this for initialization
     void Start()
