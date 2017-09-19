@@ -19,7 +19,7 @@ public class NotesControl1 : MonoBehaviour {
     {
         transform.position = InitialPosition;//初期位置にする
         randomVec = Random.Range(0, 4);
-        switch (0)
+        switch (3)
         {
             case 0:
                 UpperLeft();
