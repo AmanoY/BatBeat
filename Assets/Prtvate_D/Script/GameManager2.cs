@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManagerα : MonoBehaviour {
+public class GameManager2 : MonoBehaviour {
     //仮にGoodとPerfectに別々の点数を与えています。
     public int Score = 0, ComboScore, GoodScore, PerfectScore;
     int Combo = 0, Miss = 0, Good = 50, Perfect = 100;
-
+    
     //スコアをゲット
     public int GetScoreCount()
     {
@@ -65,12 +65,13 @@ public class GameManagerα : MonoBehaviour {
         Perfect++;
         PerfectScore += Perfect;
     }
+    int TotalScore;
     public int GetTotalScore()
     {
-        return
+        return TotalScore= Score + ComboScore + GoodScore + PerfectScore;
     }
     public void SetTotalScore()
     {
-       int TotalScore= Score + ComboScore + GoodScore + PerfectScore;
+        
     } 
 }
