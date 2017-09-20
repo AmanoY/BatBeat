@@ -8,10 +8,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 4: {fileID: 475760}
 =======
   - 4: {fileID: 452914}
 >>>>>>> origin/dispotherchara1
+=======
+  - 4: {fileID: 446504}
+>>>>>>> origin/amano
   m_Layer: 0
   m_Name: NortsParticleSystem
   m_TagString: Untagged
@@ -20,10 +24,14 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &475760
 =======
 --- !u!4 &452914
 >>>>>>> origin/dispotherchara1
+=======
+--- !u!4 &446504
+>>>>>>> origin/amano
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
