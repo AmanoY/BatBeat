@@ -4,10 +4,11 @@ using System.Collections;
 public class NotesControl1 : MonoBehaviour {
 
     public SpriteRenderer sr;
-
+    
     Vector3 InitialPosition = new Vector3(0, 0, 0);
     float xspeed = 0,yspeed = 0;
     int randomVec = 0;
+    float scale = 0;
 
     public void SetColor(Color c)
     {
@@ -39,13 +40,20 @@ public class NotesControl1 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
         transform.Translate(xspeed,yspeed, 0.0f);     //左上
         //transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
             Destroy(gameObject);    //画面外に出たら消す
         }
-
+            scale += 0.018f;
+        if (scale>=1)
+        {
+            scale = 1;
+        }
+        transform.localScale = new Vector3(scale,scale , 0);
+        
     }
 
     //左上に進むメソッド

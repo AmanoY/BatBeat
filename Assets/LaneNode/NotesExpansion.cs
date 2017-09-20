@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
-    static int a;
+public class NotesExpansion : MonoBehaviour {
+    
 	// Use this for initialization
 	void Start () {
 	
