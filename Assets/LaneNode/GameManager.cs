@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManagerα : MonoBehaviour {
+public class GameManager : MonoBehaviour {
     static int a;
 	// Use this for initialization
 	void Start () {
