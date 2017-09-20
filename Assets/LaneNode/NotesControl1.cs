@@ -2,18 +2,12 @@
 using System.Collections;
 
 public class NotesControl1 : MonoBehaviour {
-
-    public SpriteRenderer sr;
     
     Vector3 InitialPosition = new Vector3(0, 0, 0);
     float xspeed = 0,yspeed = 0;
     int randomVec = 0;
     float scale = 0;
-
-    public void SetColor(Color c)
-    {
-        sr.color = Color.green;
-    }
+    public GameObject gameManager;
 
     // Use this for initialization
     void Start()
@@ -45,6 +39,7 @@ public class NotesControl1 : MonoBehaviour {
         //transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
+            
             Destroy(gameObject);    //画面外に出たら消す
         }
             scale += 0.018f;
