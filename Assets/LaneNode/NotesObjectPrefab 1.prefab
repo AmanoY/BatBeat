@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 471398}
+  m_Layer: 2
+  m_Name: Weakpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &139102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 416840}
   - 212: {fileID: 21219052}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +41,8 @@ GameObject:
   - 4: {fileID: 465790}
   - 114: {fileID: 11410294}
   - 50: {fileID: 5001212}
-  - 58: {fileID: 5889726}
-  m_Layer: 0
+  - 58: {fileID: 5865016}
+  m_Layer: 2
   m_Name: NotesObjectPrefab 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,11 +69,24 @@ Transform:
   m_GameObject: {fileID: 174126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children:
   - {fileID: 416840}
+  - {fileID: 471398}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &471398
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 465790}
+  m_RootOrder: 1
 --- !u!50 &5001212
 Rigidbody2D:
   serializedVersion: 2
@@ -76,7 +104,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &5889726
+--- !u!58 &5865016
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,7 +113,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -101,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea73878bfbdaa5645bd710b0d87dcc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 21219052}
 --- !u!212 &21219052
 SpriteRenderer:
   m_ObjectHideFlags: 1

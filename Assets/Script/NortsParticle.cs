@@ -6,20 +6,18 @@ public class NortsParticle : MonoBehaviour {
 
     public GameObject nortsParticle;
 
-	// Use this for initialization
-	void Start () {
-        nortsParticle = GetComponent<GameObject>();
-       
-	}
-	
+    // Use this for initialization
+    void Start()
+    {
+
+    }
 	// Update is called once per frame
 	void Update () {
-
-      
+       
 	}
 
     public void ParticlePlay()
     {
-        Instantiate(nortsParticle);
+        Instantiate(nortsParticle, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }

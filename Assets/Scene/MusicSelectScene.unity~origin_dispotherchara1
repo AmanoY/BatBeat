@@ -182,18 +182,22 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 131835103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/Scene/MusicSelectScene.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 10000}
+>>>>>>> origin/amano:Assets/Scene/MusicSelectScene.unity~origin_dispotherchara1
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
-  - {fileID: 1491058836}
   - {fileID: 2009281003}
-  - {fileID: 2106238782}
   - {fileID: 732650079}
   - {fileID: 1542040246}
   - {fileID: 1935527618}
   - {fileID: 971737151}
   - {fileID: 956604042}
   - {fileID: 929227812}
+  - {fileID: 1491058836}
+  - {fileID: 2106238782}
   m_Father: {fileID: 1708649492}
   m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 0}
@@ -220,7 +224,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec96d19d4e569e043aa4cd20ea42b4e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 99dba501d0d64d34c9434bd0edb80774, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -715,7 +719,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a9c15148c29c4e64f83f23d9275993c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7acc5d1968fe424e8dc7b5327a11fed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -726,8 +730,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723935836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/Scene/MusicSelectScene.unity
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.3, y: 2.3, z: 1}
+=======
+  m_LocalPosition: {x: -0.002, y: 0.025, z: 0}
+  m_LocalScale: {x: 1.486319, y: 1.1184022, z: 1}
+>>>>>>> origin/amano:Assets/Scene/MusicSelectScene.unity~origin_dispotherchara1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -742,7 +751,7 @@ GameObject:
   - 222: {fileID: 732650081}
   - 114: {fileID: 732650080}
   m_Layer: 5
-  m_Name: SELine
+  m_Name: SE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,7 +768,7 @@ RectTransform:
   m_LocalScale: {x: 1.1111112, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 131835104}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -122.22222, y: -27.777779}
@@ -1084,7 +1093,7 @@ RectTransform:
   m_Children:
   - {fileID: 505926009}
   m_Father: {fileID: 131835104}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4, y: -25}
@@ -1194,7 +1203,7 @@ RectTransform:
   m_Children:
   - {fileID: 536415934}
   m_Father: {fileID: 131835104}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -240, y: -25}
@@ -1304,7 +1313,7 @@ RectTransform:
   m_Children:
   - {fileID: 419968193}
   m_Father: {fileID: 131835104}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -240, y: 55}
@@ -1901,7 +1910,7 @@ RectTransform:
   m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1}
   m_Children: []
   m_Father: {fileID: 131835104}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -63, y: 75.333336}
@@ -1919,7 +1928,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD:Assets/Scene/MusicSelectScene.unity
   m_Color: {r: 1, g: 0.9264706, b: 0, a: 1}
+=======
+  m_Color: {r: 0.27205884, g: 0.2934689, b: 1, a: 1}
+>>>>>>> origin/amano:Assets/Scene/MusicSelectScene.unity~origin_dispotherchara1
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2049,7 +2062,7 @@ RectTransform:
   m_Children:
   - {fileID: 2048306989}
   m_Father: {fileID: 131835104}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 244.44444, y: 138.88889}
@@ -2576,7 +2589,7 @@ RectTransform:
   m_Children:
   - {fileID: 1848702297}
   m_Father: {fileID: 131835104}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -4, y: 55}
@@ -2862,7 +2875,7 @@ GameObject:
   - 222: {fileID: 2009281005}
   - 114: {fileID: 2009281004}
   m_Layer: 5
-  m_Name: VolLine
+  m_Name: Vol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2879,7 +2892,7 @@ RectTransform:
   m_LocalScale: {x: 1.1111112, y: 0.02, z: 1}
   m_Children: []
   m_Father: {fileID: 131835104}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -122.22222, y: 55.555557}
@@ -3092,7 +3105,7 @@ RectTransform:
   m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1}
   m_Children: []
   m_Father: {fileID: 131835104}
-  m_RootOrder: 2
+  m_RootOrder: 8
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -62.22223, y: 0}
@@ -3110,7 +3123,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD:Assets/Scene/MusicSelectScene.unity
   m_Color: {r: 1, g: 0.9254902, b: 0, a: 1}
+=======
+  m_Color: {r: 0, g: 0.7897645, b: 0.959, a: 1}
+>>>>>>> origin/amano:Assets/Scene/MusicSelectScene.unity~origin_dispotherchara1
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
