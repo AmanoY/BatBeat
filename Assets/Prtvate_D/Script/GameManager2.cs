@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class GameManager2 : MonoBehaviour {
     //仮にGoodとPerfectに別々の点数を与えています。
     public int Score = 0, ComboScore, GoodScore, PerfectScore;
@@ -65,7 +66,9 @@ public class GameManager2 : MonoBehaviour {
         Perfect++;
         PerfectScore += Perfect;
     }
+    //変数トータルスコア
     int TotalScore;
+    //引数になったトータルスコアです。
     public int GetTotalScore()
     {
         return TotalScore= Score + ComboScore + GoodScore + PerfectScore;
@@ -74,4 +77,5 @@ public class GameManager2 : MonoBehaviour {
     {
         
     } 
+    
 }
