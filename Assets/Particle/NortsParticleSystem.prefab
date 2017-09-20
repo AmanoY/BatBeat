@@ -7,7 +7,15 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 4: {fileID: 446504}
+=======
+<<<<<<< HEAD
+  - 4: {fileID: 475760}
+=======
+  - 4: {fileID: 452914}
+>>>>>>> origin/dispotherchara1
+>>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
   m_Layer: 0
   m_Name: NortsParticleSystem
   m_TagString: Untagged
@@ -15,7 +23,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+<<<<<<< HEAD
 --- !u!4 &446504
+=======
+<<<<<<< HEAD
+--- !u!4 &475760
+=======
+--- !u!4 &452914
+>>>>>>> origin/dispotherchara1
+>>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -26,7 +42,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+<<<<<<< HEAD
+  m_RootOrder: 0
+=======
+  m_RootOrder: 6
+>>>>>>> origin/dispotherchara1
+>>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
