@@ -73,7 +73,6 @@ public class NotesGenerator : MonoBehaviour
 57.2f,
 57.8f,
 58.4f,
--2f,
 59f,
 60.8f,
 61.4f,

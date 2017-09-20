@@ -85,17 +85,36 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &126762414
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Script/Scene/MusicSelectScene.unity
+--- !u!1 &383777273
+=======
+--- !u!1 &46718720
+=======
+--- !u!1 &383777273
+>>>>>>> origin/amano
+>>>>>>> origin/souma
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 224: {fileID: 126762415}
   - 222: {fileID: 126762417}
   - 114: {fileID: 126762416}
   - 223: {fileID: 126762418}
+=======
+<<<<<<< HEAD
+  - 224: {fileID: 46718721}
+  - 222: {fileID: 46718724}
+  - 114: {fileID: 46718723}
+  - 114: {fileID: 46718722}
+>>>>>>> origin/souma
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -158,9 +177,53 @@ CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 126762414}
 --- !u!223 &126762418
 Canvas:
+=======
+  m_GameObject: {fileID: 46718720}
+--- !u!1 &144662766
+>>>>>>> origin/dispotherchara1:Assets/Scene/SelectScene.unity
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+=======
+>>>>>>> origin/amano
+  - 4: {fileID: 383777276}
+  - 114: {fileID: 383777275}
+  - 114: {fileID: 383777274}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &383777274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 383777273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &383777275
+MonoBehaviour:
+>>>>>>> origin/souma
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -273,7 +336,100 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1 &520686749
+=======
+<<<<<<< HEAD
+--- !u!1 &539313029
+=======
+--- !u!1 &1348707108
+>>>>>>> origin/amano
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+<<<<<<< HEAD
+  - 224: {fileID: 539313030}
+  - 222: {fileID: 539313032}
+  - 114: {fileID: 539313031}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+=======
+  - 4: {fileID: 1348707113}
+  - 20: {fileID: 1348707112}
+  - 92: {fileID: 1348707111}
+  - 124: {fileID: 1348707110}
+  - 81: {fileID: 1348707109}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+>>>>>>> origin/amano
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+--- !u!224 &539313030
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539313029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 46718721}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &539313031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539313029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Tutorial
+--- !u!222 &539313032
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539313029}
+--- !u!1 &557507477
+>>>>>>> origin/souma
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -831,6 +987,7 @@ SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2003599850}
   m_Enabled: 1
   m_CastShadows: 0
@@ -888,32 +1045,60 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &2053113674
+=======
+  m_GameObject: {fileID: 1921253692}
+=======
+--- !u!81 &1348707109
+>>>>>>> origin/souma
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2053113673}
   m_Enabled: 1
 --- !u!92 &2053113675
+=======
+  m_GameObject: {fileID: 1348707108}
+  m_Enabled: 1
+--- !u!124 &1348707110
+>>>>>>> origin/souma
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2053113673}
   m_Enabled: 1
 --- !u!124 &2053113676
+=======
+  m_GameObject: {fileID: 1348707108}
+  m_Enabled: 1
+--- !u!92 &1348707111
+>>>>>>> origin/souma
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2053113673}
   m_Enabled: 1
 --- !u!20 &2053113677
+=======
+  m_GameObject: {fileID: 1348707108}
+  m_Enabled: 1
+--- !u!20 &1348707112
+>>>>>>> origin/souma
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2053113673}
+=======
+  m_GameObject: {fileID: 1348707108}
+>>>>>>> origin/amano
+>>>>>>> origin/souma
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -953,30 +1138,73 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 0
 --- !u!1 &2110443066
+=======
+<<<<<<< HEAD
+  m_RootOrder: 4
+--- !u!1 &1944420660
+=======
+  m_RootOrder: 0
+--- !u!1 &2005241278
+>>>>>>> origin/amano
+>>>>>>> origin/souma
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 224: {fileID: 2110443067}
   - 222: {fileID: 2110443069}
   - 114: {fileID: 2110443068}
   m_Layer: 5
   m_Name: Text
+=======
+<<<<<<< HEAD
+  - 224: {fileID: 1944420661}
+  - 222: {fileID: 1944420664}
+  - 114: {fileID: 1944420663}
+  - 114: {fileID: 1944420662}
+  m_Layer: 5
+  m_Name: Back
+=======
+  - 224: {fileID: 2005241279}
+  - 222: {fileID: 2005241281}
+  - 114: {fileID: 2005241280}
+  m_Layer: 5
+  m_Name: Text
+>>>>>>> origin/amano
+>>>>>>> origin/souma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &2110443067
+=======
+<<<<<<< HEAD
+--- !u!224 &1944420661
+=======
+--- !u!224 &2005241279
+>>>>>>> origin/amano
+>>>>>>> origin/souma
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2110443066}
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1944420660}
+=======
+  m_GameObject: {fileID: 2005241278}
+>>>>>>> origin/amano
+>>>>>>> origin/souma
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.4, y: 2.4, z: 1}
@@ -985,28 +1213,115 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2110443068
+=======
+  m_AnchoredPosition: {x: 0, y: 0}
+<<<<<<< HEAD
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1944420662
+=======
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005241280
+>>>>>>> origin/amano
+>>>>>>> origin/souma
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2110443066}
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1944420660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1944420663}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1944420663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944420660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  m_GameObject: {fileID: 2005241278}
+>>>>>>> origin/souma
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 0.039215688, a: 1}
+=======
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+>>>>>>> origin/amano
+>>>>>>> origin/souma
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1944420664
+=======
+>>>>>>> origin/souma
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4aab0568858c5504aa9dd6abfe18105a, type: 3}
     m_FontSize: 30
@@ -1021,9 +1336,23 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Music Select
+<<<<<<< HEAD
 --- !u!222 &2110443069
+=======
+--- !u!222 &2005241281
+>>>>>>> origin/amano
+>>>>>>> origin/souma
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2110443066}
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1944420660}
+>>>>>>> origin/dispotherchara1:Assets/Scene/SelectScene.unity
+=======
+  m_GameObject: {fileID: 2005241278}
+>>>>>>> origin/amano
+>>>>>>> origin/souma
