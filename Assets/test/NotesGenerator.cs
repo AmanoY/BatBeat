@@ -7,8 +7,9 @@ public class NotesGenerator : MonoBehaviour
 
     int timeCount = 0;
 
+    static int difficulty = 1;
     //Notesを発生させる時間
-    public float[] timing =
+    public float[] timingEasy =
     {
 4.5f,
 6.8f,
@@ -101,9 +102,249 @@ public class NotesGenerator : MonoBehaviour
 77.6f,
 80f,
 82.4f,
+    };
 
-
-
+    public float[] timingNormal = {
+    2.1f,
+2.5f,
+2.9f,
+3.8f,
+4.4f,
+4.9f,
+5.4f,
+5.9f,
+6.2f,
+6.8f,
+7.3f,
+7.7f,
+8.3f,
+8.7f,
+9.2f,
+9.6f,
+9.8f,
+10.1f,
+10.4f,
+10.7f,
+11f,
+11.4f,
+11.6f,
+11.9f,
+12.1f,
+12.2f,
+12.8f,
+13.3f,
+11.6f,
+14.1f,
+14.3f,
+14.5f,
+14.6f,
+14.9f,
+15.2f,
+15.5f,
+16.1f,
+16.4f,
+16.8f,
+16.9f,
+17f,
+17.3f,
+17.6f,
+18.1f,
+18.5f,
+18.9f,
+19.3f,
+20.6f,
+21.3f,
+21.7f,
+22.1f,
+22.4f,
+22.9f,
+23.3f,
+23.7f,
+24f,
+24.3f,
+24.5f,
+24.7f,
+24.8f,
+25f,
+25.3f,
+25.7f,
+26f,
+26.5f,
+26.9f,
+27.3f,
+27.7f,
+28f,
+28.2f,
+28.5f,
+28.7f,
+28.9f,
+29f,
+29.4f,
+29.6f,
+30.1f,
+30.6f,
+30.8f,
+31.2f,
+31.3f,
+31.5f,
+31.7f,
+31.9f,
+32.1f,
+32.2f,
+32.5f,
+32.8f,
+33.2f,
+33.7f,
+33.9f,
+34.2f,
+34.4f,
+34.9f,
+35.3f,
+35.6f,
+36.1f,
+36.5f,
+36.9f,
+37.3f,
+37.6f,
+38f,
+38.4f,
+38.5f,
+38.9f,
+39.1f,
+39.2f,
+39.4f,
+39.7f,
+40.1f,
+40.4f,
+40.9f,
+41.3f,
+41.6f,
+42.1f,
+42.6f,
+42.9f,
+43f,
+43.5f,
+43.7f,
+44f,
+44.3f,
+44.5f,
+44.9f,
+45.2f,
+45.5f,
+45.9f,
+46.1f,
+46.4f,
+46.8f,
+47.2f,
+48.1f,
+48.5f,
+48.8f,
+49.3f,
+49.7f,
+50f,
+50.3f,
+50.6f,
+50.9f,
+51.2f,
+51.6f,
+51.8f,
+52.2f,
+52.4f,
+53.3f,
+53.4f,
+53.6f,
+53.9f,
+54.2f,
+54.5f,
+54.7f,
+55.1f,
+55.4f,
+55.7f,
+55.8f,
+56.1f,
+56.3f,
+56.6f,
+56.9f,
+57.1f,
+57.5f,
+57.8f,
+58.1f,
+58.3f,
+58.4f,
+58.7f,
+0f,
+59.3f,
+0f,
+59.6f,
+60f,
+60.2f,
+60.5f,
+60.9f,
+61.1f,
+61.4f,
+61.7f,
+62f,
+62.3f,
+62.7f,
+62.9f,
+63.1f,
+63.2f,
+63.6f,
+63.8f,
+64.1f,
+64.3f,
+64.9f,
+65f,
+65.3f,
+65.5f,
+65.7f,
+65.9f,
+66.2f,
+66.5f,
+66.7f,
+67f,
+67.3f,
+67.7f,
+67.8f,
+68.5f,
+69f,
+69.2f,
+69.5f,
+69.8f,
+70.1f,
+70.4f,
+70.7f,
+71f,
+71.3f,
+71.6f,
+71.9f,
+72.2f,
+72.5f,
+72.8f,
+73.3f,
+73.7f,
+74.2f,
+74.7f,
+75.2f,
+75.7f,
+76.1f,
+76.7f,
+76.9f,
+77.3f,
+77.6f,
+78.1f,
+78.5f,
+79.3f,
+79.4f,
+80f,
+80.3f,
+80.6f,
+81f,
+81.2f,
+81.5f,
+81.8f,
+82.1f,
+82.4f,
     };
 
     public GameObject notesPrefab;
@@ -112,6 +353,7 @@ public class NotesGenerator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         timeCount = 0;
         timer = 0.0f;
      //   Notes = GameObject.FindObjectOfType<NotesControl1>();
@@ -122,33 +364,47 @@ public class NotesGenerator : MonoBehaviour
     {
         //timerに時間を加算させ続ける
         timer += Time.deltaTime;
-
-        //Notesを呼び出す
-        for ( timeCount = 0; timeCount < timing.Length-1; timeCount++)
+        if (difficulty==0)
         {
-
-        if (timing[timeCount] >= timer - Time.deltaTime / 2 && timing[timeCount] <= timer + Time.deltaTime / 2)
-        {
-
-            GameObject go = Instantiate(notesPrefab);
-        }
-
-        }
-    }
-    /*
-    public bool TimingCheck()
-    {
-        if (timeCount > 0)
-        {
-
-            if (timing[timeCount] == timing[timeCount - 1])
+            //EasyのNotesを呼び出す
+            for (timeCount = 0; timeCount < timingEasy.Length - 1; timeCount++)
             {
-                Debug.Log(timing[timeCount]);
-                Debug.Log(timing[timeCount-1]);
-                return true;
+
+                if (timingEasy[timeCount] >= timer - Time.deltaTime / 2 && timingEasy[timeCount] <= timer + Time.deltaTime / 2)
+                {
+
+                    GameObject go = Instantiate(notesPrefab);
+                }
+
             }
         }
-        return false;
+        //NormalのNotesを呼び出す
+        if (difficulty == 1)
+        {
+            //EasyのNotesを呼び出す
+            for (timeCount = 0; timeCount < timingNormal.Length - 1; timeCount++)
+            {
+
+                if (timingNormal[timeCount] >= timer - Time.deltaTime / 2 && timingNormal[timeCount] <= timer + Time.deltaTime / 2)
+                {
+
+                    GameObject go = Instantiate(notesPrefab);
+                }
+
+            }
+        }
+
     }
-    */
+    public void DifficultyChangeEasy()
+    {
+        difficulty = 0;
+    }
+    public void DifficultyChangeNormal()
+    {
+        difficulty = 1;
+    }
+    public void DifficultyChangeHard()
+    {
+        difficulty = 2;
+    }
 }
