@@ -96,7 +96,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: 9afb59e761bf6584ebf821d16f622af6
+  productGUID: 6ee5344b7b6ee07478ca0dd182dbeb98
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -411,6 +411,7 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
+  - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
@@ -420,7 +421,11 @@ PlayerSettings:
   - iOS::Architecture
   - iOS::EnableIncrementalBuildSupportForIl2cpp
   - iOS::ScriptingBackend
+  - tvOS::Architecture
+  - tvOS::EnableIncrementalBuildSupportForIl2cpp
+  - tvOS::ScriptingBackend
   Android::ScriptingBackend: 0
+  Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
@@ -430,6 +435,9 @@ PlayerSettings:
   iOS::Architecture: 2
   iOS::EnableIncrementalBuildSupportForIl2cpp: 1
   iOS::ScriptingBackend: 1
+  tvOS::Architecture: 1
+  tvOS::EnableIncrementalBuildSupportForIl2cpp: 0
+  tvOS::ScriptingBackend: 1
   boolPropertyNames:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching

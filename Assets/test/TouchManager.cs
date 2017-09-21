@@ -5,11 +5,13 @@ public class TouchManager : MonoBehaviour
 {
     bool touched;
     public GameObject NodePre;
+    public GameManager gameManeger;
      Vector2 Lane;
      Vector2 Notes;
      Vector2 dir;
     float d;
     int Count = 0;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         
@@ -20,30 +22,27 @@ public class TouchManager : MonoBehaviour
             Notes = collision.gameObject.transform.position;
             dir = Lane - Notes;
             float d = dir.magnitude;
+
             //ミスの判定
             //Debug.Log(collision.gameObject.transform.position)
             if (d<=1.4&&d>=1.3)
             {
                 Destroy(collision.gameObject);
-//                Debug.Log("miss");
-                Debug.Log(Count);
-                Count++;
+                gameManeger.MissComboCount();
             }
+
             //goodの判定
             else if (d<=1.29&&d>=1)
             {
                 Destroy(collision.gameObject);
-//                Debug.Log("good");
-                Debug.Log(Count);
-                Count++;
+                gameManeger.GoodComboCount();
             }
+
             //perfectの判定
             else if (d >= 0&&d<=0.99)
             {
                 Destroy(collision.gameObject);
-//                Debug.Log("perfect");
-                Count++;
-                Debug.Log(Count);
+                gameManeger.PerfectComboCount();
             }
 
             touched = false;
