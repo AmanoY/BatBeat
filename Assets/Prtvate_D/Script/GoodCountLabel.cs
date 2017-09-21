@@ -12,6 +12,7 @@ public class GoodCountLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        GoodLabel.text = gameManager.GoodComboCount()== ToString("000000")+(" Good");
+
     }
 }
+       // GoodLabel.text = gameManager.GoodComboCount()== ToString("000000")+(" Good");

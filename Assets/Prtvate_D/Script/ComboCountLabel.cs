@@ -12,6 +12,6 @@ public class ComboCountLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        ComboLabel.text = gameManager.MaxComboCount().ToString("000000") + (" Combo");
+        //ComboLabel.text = gameManager.MaxComboCount().ToString("000000") + (" Combo");
     }
 }

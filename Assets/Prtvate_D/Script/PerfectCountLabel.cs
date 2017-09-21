@@ -13,6 +13,6 @@ public class PerfectCountLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        PerfectLabel.text = gameManager.PerfectComboCount()==ToString("000000") + (" Perfect");
+      //  PerfectLabel.text = gameManager.PerfectComboCount()==ToString("000000") + (" Perfect");
     }
 }

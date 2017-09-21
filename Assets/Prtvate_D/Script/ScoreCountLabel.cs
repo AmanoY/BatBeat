@@ -12,6 +12,6 @@ public class ScoreCountLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        ScoreLabel.text = gameManager.counb().ToString("000000")+(" Score");
+        //ScoreLabel.text = gameManager.counb().ToString("000000")+(" Score");
     }
 }

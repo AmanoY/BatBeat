@@ -11,7 +11,7 @@ public class MissCountLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        MissLabel.text = gameManager.MissComboCount().ToString("000000") + (" Miss");
+       // MissLabel.text = gameManager.MissComboCount().ToString("000000") + (" Miss");
     }
     /*public void Missing()
     {
