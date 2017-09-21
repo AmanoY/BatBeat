@@ -16,7 +16,7 @@ public class TouchManager : MonoBehaviour
     {
         
         //押している最中は削除
-        if (touched)
+        if (OnTouchDown())
         {
             Lane = transform.position;
             Notes = collision.gameObject.transform.position;
@@ -45,7 +45,6 @@ public class TouchManager : MonoBehaviour
                 gameManeger.PerfectComboCount();
             }
 
-            touched = false;
         }
     }
 
@@ -55,7 +54,7 @@ public class TouchManager : MonoBehaviour
     private void OnMouseDown()
     {
         //Debug.Log("クリックされた" + gameObject.name);
-        touched = true;
+        //touched = true;
 
     }
 
@@ -68,8 +67,34 @@ public class TouchManager : MonoBehaviour
     }
 
 
-    public void RangeDetection()
+    bool OnTouchDown()
     {
+        // タッチされているとき
+        if (0 < Input.touchCount)
+        {
+            // タッチされている指の数だけ処理
+            for (int i = 0; i < Input.touchCount; i++)
+            {
+                // タッチ情報をコピー
+                Touch t = Input.GetTouch(i);
+                // タッチしたときかどうか
+                if (t.phase == TouchPhase.Began)
+                {
+                    //タッチした位置からRayを飛ばす
+                    Ray ray = Camera.main.ScreenPointToRay(t.position);
+                    RaycastHit hit = new RaycastHit();
+                    if (Physics.Raycast(ray, out hit))
+                    {
+                        //Rayを飛ばしてあたったオブジェクトが自分自身だったら
+                        if (hit.collider.gameObject == this.gameObject)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false; //タッチされてなかったらfalse
     }
 
     // Use this for initialization

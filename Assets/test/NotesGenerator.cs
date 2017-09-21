@@ -129,7 +129,6 @@ public class NotesGenerator : MonoBehaviour
 
         if (timing[timeCount] >= timer - Time.deltaTime / 2 && timing[timeCount] <= timer + Time.deltaTime / 2)
         {
-            Debug.Log(timeCount);
 
             GameObject go = Instantiate(notesPrefab);
         }

@@ -5,12 +5,11 @@ public class GameManager : MonoBehaviour {
     bool one;
 
     public static int ComboCount = 0;
-    public static int MaxComboCount=0;
-    public static int PerfectCount=0;
+    public static int MaxComboCount = 0;
+    public static int PerfectCount = 0;
     public static int GoodCount = 0;
     public static int MissCount = 0;
 
-    static int Score = 0;
     public static int TotalScore = 0;
     int PerfectsScore = 100;
     int GoodScore = 50;
@@ -76,6 +75,16 @@ public class GameManager : MonoBehaviour {
 
         TotalScore += 1000;
 
+    }
+
+    public void ResetGame()
+    {
+        ComboCount = 0;
+        MaxComboCount = 0;
+        PerfectCount = 0;
+        GoodCount = 0;
+        MissCount = 0;
+        TotalScore = 0;
     }
 
 }
