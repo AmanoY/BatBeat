@@ -5,7 +5,7 @@ using System.Collections;
 public class GameManager2 : MonoBehaviour {
     //仮にGoodとPerfectに別々の点数を与えています。
     public int Score = 0, ComboScore, GoodScore, PerfectScore;
-    int Combo = 0, Miss = 0, Good = 50, Perfect = 100;
+    public static int Combo = 0, Miss = 0, Good = 50, Perfect = 100;
     
     //スコアをゲット
     public int GetScoreCount()
@@ -38,9 +38,9 @@ public class GameManager2 : MonoBehaviour {
     }
 
     //ミス回数をセット
-    public void SetMissCount()
+    public void Missing()
     {
-        Miss++;
+        DontDestroyOnLoad(this);
     }
 
     //グッド回数をゲット
