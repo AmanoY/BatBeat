@@ -55,7 +55,6 @@ public class GameManager : MonoBehaviour {
         ComboCount++;
         PerfectCount++;
         TotalScore += PerfectsScore;
-        Debug.Log(TotalScore);
     }
 
     //Goodの判定の時に呼び出されるメソッド
@@ -64,7 +63,6 @@ public class GameManager : MonoBehaviour {
         ComboCount++;
         GoodCount++;
         TotalScore+= GoodScore;
-        Debug.Log(TotalScore);
     }
 
     //Missの判定の時に呼び出されるメソッド
