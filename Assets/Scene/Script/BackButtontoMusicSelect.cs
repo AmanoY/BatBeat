@@ -9,6 +9,7 @@ public class BackButtontoMusicSelect : MonoBehaviour {
     {
         sceneChange = GameObject.FindObjectOfType<SceneChange>();
         gameManager = GetComponent<GameManager>();
+        gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
