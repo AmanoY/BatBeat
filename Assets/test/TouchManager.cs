@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class TouchManager : MonoBehaviour
 {
@@ -49,12 +50,14 @@ public class TouchManager : MonoBehaviour
     /// <summary>
     /// コライダーがクリック（タップ）されたときに呼び出される
     /// </summary>
+     /*
     private void OnMouseDown()
     {
         //Debug.Log("クリックされた" + gameObject.name);
         touched = true;
 
     }
+    */
 
     /// <summary>
     /// タップが終わったときに呼び出される
@@ -64,6 +67,8 @@ public class TouchManager : MonoBehaviour
         touched = false;
     }
 
+
+
     // Use this for initialization
     void Start()
     { 
@@ -72,6 +77,35 @@ public class TouchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.touchCount>0)
+        {
+            Debug.Log("たっちされたよ");
+            Touch touch1 = Input.GetTouch(0);
+            if (touch1.phase==TouchPhase.Began)
+            {
 
+                if (touch1.position.x<=-3&&touch1.position.x>=-9
+                    &&touch1.position.y>=2&&touch1.position.y<=4)
+                {
+                    touched = true;
+                }
+            
+            }
+            Touch touch2 = Input.GetTouch(1);
+            if (touch2.phase == TouchPhase.Began)
+            {
+
+            }
+            Touch touch3 = Input.GetTouch(2);
+            if (touch3.phase == TouchPhase.Began)
+            {
+
+            }
+            Touch touch4 = Input.GetTouch(3);
+            if (touch4.phase == TouchPhase.Began)
+            {
+
+            }
+        }
     }
 }

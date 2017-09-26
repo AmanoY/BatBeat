@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NotesGenerator2 : MonoBehaviour {
+public class NotesGenerator2 : MonoBehaviour
+{
 
     float timer = 0.0f;
 
     int timeCount = 0;
 
     NotesGenerator difficulty;
+    public SceneChange sceneChange;
+    public GameObject notesPrefab;
+
     public float[] timingNormal = {
 0.01f,
-2.4f,
 2.9f,
 3.8f,
 4.4f,
@@ -176,9 +179,7 @@ public class NotesGenerator2 : MonoBehaviour {
 58.2f,
 58.4f,
 58.7f,
--1f,
 59.3f,
--1f,
 59.6f,
 59.9f,
 60.2f,
@@ -251,19 +252,18 @@ public class NotesGenerator2 : MonoBehaviour {
 82.4f,
 
     };
-    public GameObject notesPrefab;
+
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
-        GetComponent<NotesGenerator>();
+        sceneChange = GameObject.FindObjectOfType<SceneChange>();
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
-        int difficulty=NotesGenerator.difficulty;
+        int difficulty = NotesGenerator.difficulty;
         timer += Time.deltaTime;
         //NormalのNotesを呼び出す
         if (difficulty == 1)
@@ -279,6 +279,10 @@ public class NotesGenerator2 : MonoBehaviour {
                 }
 
             }
+        }
+        if (timer >= 90)
+        {
+            sceneChange.NextSceneNumber(4);
         }
 
     }
