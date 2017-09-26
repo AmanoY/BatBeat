@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour {
     public static int MaxComboCount = 0;
     public static int PerfectCount = 0;
     public static int GoodCount = 0;
-    public static int MissCount = 0;
+    public static int MissCount;
 
-    public static int TotalScore = 0;
+    public static int TotalScore ;
     int PerfectsScore = 100;
     int GoodScore = 50;
 
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
         if (MaxComboCount<CountRecord)
         {
             MaxComboCount = CountRecord;
+            GameData.SetCombo(MaxComboCount);
         }
 	}
 
@@ -44,6 +45,8 @@ public class GameManager : MonoBehaviour {
         {
             TotalScore += 1000;
         }
+        GameData.Setperfectcombo(1);
+        GameData.SetScore(TotalScore);
     }
 
     //Goodの判定の時に呼び出されるメソッド
@@ -56,6 +59,8 @@ public class GameManager : MonoBehaviour {
         {
             TotalScore += 1000;
         }
+        GameData.Setgoodcombo(1);
+        GameData.SetScore(TotalScore);
     }
 
     //Missの判定の時に呼び出されるメソッド
@@ -63,6 +68,7 @@ public class GameManager : MonoBehaviour {
     {
         ComboCount=0;
         MissCount++;
+        GameData.Setmisscombo(1);
     }
 
     //リザルト画面をタップした時に呼び出すscript
@@ -74,6 +80,9 @@ public class GameManager : MonoBehaviour {
         GoodCount = 0;
         MissCount = 0;
         TotalScore = 0;
+    }
+    public static void Record()
+    {
     }
 
 }
