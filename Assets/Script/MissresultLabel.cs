@@ -2,22 +2,22 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MaxComboresultLabel : MonoBehaviour {
+public class MissresultLabel : MonoBehaviour {
+
     GameManager gameManager;
-    Text MaxComboText;
+    Text MissText;
     // Use this for initialization
     void Start()
     {
-        MaxComboText = GetComponentInChildren<Text>();
-        MaxComboText.text = "000";
+        MissText = GetComponentInChildren<Text>();
+        MissText.text = "000";
         gameManager = GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        int MaxCombo = GameManager.MaxComboCount;
-        MaxComboText.text = "" + MaxCombo;
+        int MissCount = GameManager.MissCount;
+        MissText.text = "" + MissCount;
     }
 }
-

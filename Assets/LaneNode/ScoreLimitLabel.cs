@@ -7,7 +7,7 @@ public class ScoreLimitLabel : MonoBehaviour {
     // ゲームマネージャーを覚えておくための変数
      GameManager gameManager;
      GameObject obj;
-    Text ScoreText;
+     Text ScoreText;
     // UIテキストを覚えておくための変数
      void Start()
     {
@@ -19,7 +19,7 @@ public class ScoreLimitLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        int a = GameManager.TotalScore;
-        ScoreText.text =""+a;
+        int Score = GameManager.TotalScore;
+        ScoreText.text =""+Score;
     }
 }

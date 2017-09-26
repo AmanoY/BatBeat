@@ -83,10 +83,12 @@ public class TouchManager : MonoBehaviour
             Touch touch1 = Input.GetTouch(0);
             if (touch1.phase==TouchPhase.Began)
             {
-
+                Debug.Log("x"+touch1.position.x);
+                Debug.Log("y" + touch1.position.y);
                 if (touch1.position.x<=-3&&touch1.position.x>=-9
                     &&touch1.position.y>=2&&touch1.position.y<=4)
                 {
+                    Debug.Log("判定はできてるよ");
                     touched = true;
                 }
             
