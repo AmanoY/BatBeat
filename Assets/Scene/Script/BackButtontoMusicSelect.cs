@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class BackButtontoMusicSelect : MonoBehaviour {
     SceneChange sceneChange;
-
+    GameManager gameManager;
     void Start()
     {
         sceneChange = GameObject.FindObjectOfType<SceneChange>();
+        gameManager = GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -16,6 +17,7 @@ public class BackButtontoMusicSelect : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             sceneChange.NextSceneNumber(3);
+            gameManager.ResetGame();
         }
     }
     public void TouchButtonPush(){

@@ -20,4 +20,4 @@ public class MaxComboresultLabel : MonoBehaviour {
         MaxComboText.text = "" + MaxCombo;
     }
 }
-}
+

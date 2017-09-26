@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class perfectResultLabel : MonoBehaviour {
+    GameManager gameManager;
+    Text perfectText;
+    // Use this for initialization
+    void Start()
+    {
+        perfectText = GetComponentInChildren<Text>();
+        perfectText.text = "000";
+        gameManager = GetComponent<GameManager>();
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        int perfectCount = GameManager.PerfectCount;
+        perfectText.text = ""+perfectCount;
+    }
 }

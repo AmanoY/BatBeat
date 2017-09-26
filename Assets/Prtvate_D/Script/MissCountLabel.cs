@@ -2,19 +2,21 @@
 using System.Collections;
 using UnityEngine.UI;
 public class MissCountLabel : MonoBehaviour {
-    // インスペクターで参照を設定
-    // ゲームマネージャーを覚えておくための変数
-    public GameManager gameManager;
-    // UIテキストを覚えておくための変数
-    public Text MissLabel;
+    GameManager gameManager;
+    Text MissText;
+    // Use this for initialization
+    void Start()
+    {
+        MissText = GetComponentInChildren<Text>();
+        MissText.text = "000";
+        gameManager = GetComponent<GameManager>();
+    }
 
-    // Update is called once per frames
+    // Update is called once per frame
     void Update()
     {
-       // MissLabel.text = gameManager.MissComboCount().ToString("000000") + (" Miss");
+        int MissCount = GameManager.MissCount;
+        MissText.text = "" + MissCount;
     }
-    /*public void Missing()
-    {
-        int Resultmiss = GameManager2.Miss;
-    }*/
 }
+
