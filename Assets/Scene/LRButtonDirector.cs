@@ -5,15 +5,13 @@ using System.Collections.Generic;
 
 public class LRButtonDirector: MonoBehaviour {
 
-    GameObject RButton;
-    GameObject LButton;
     GameObject LeftButton;
     GameObject CenterButton;
     GameObject RightButton;
 
     public List<GameObject> musicSelect = new List<GameObject>();
 
-    int offset = 325;
+    int offset = 423;
     public int tapCount = 0;
 
     // Use this for initialization
