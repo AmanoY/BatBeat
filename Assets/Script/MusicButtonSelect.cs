@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class MusicButtonSelect : MonoBehaviour {
 
     //画像配列
-    public RectTransform[] musicSelect;
+    public RectTransform[] musicSelect = new RectTransform[3];
 
     //移動したい値
     float offset = 500f;

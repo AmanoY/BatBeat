@@ -499,7 +499,6 @@ GameObject:
   - 222: {fileID: 1062858159}
   - 114: {fileID: 1062858158}
   - 114: {fileID: 1062858157}
-  - 114: {fileID: 1062858160}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -564,8 +563,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1062858160}
-        m_MethodName: MoveR
+      - m_Target: {fileID: 122032239}
+        m_MethodName: MusicMoveR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -610,20 +609,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1062858155}
---- !u!114 &1062858160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1062858155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSelect: []
-  tapCount: 0
-  tapChangeCount: 0
 --- !u!1 &1361129003
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +693,6 @@ GameObject:
   - 222: {fileID: 1607347662}
   - 114: {fileID: 1607347661}
   - 114: {fileID: 1607347660}
-  - 114: {fileID: 1607347663}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -773,8 +757,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1607347663}
-        m_MethodName: MoveL
+      - m_Target: {fileID: 122032239}
+        m_MethodName: MusicMoveL
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -819,20 +803,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607347658}
---- !u!114 &1607347663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1607347658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSelect: []
-  tapCount: 0
-  tapChangeCount: 0
 --- !u!1 &1737529314
 GameObject:
   m_ObjectHideFlags: 0
