@@ -7,14 +7,46 @@ public class NotesControl1 : MonoBehaviour {
     float xspeed = 0,yspeed = 0;
     int randomVec = 0;
     float scale = 0;
-    public GameObject gameManager;
+    GameManager gameManager;
+    static bool[] useLaneFlg = { false, false, false, false };
+    int timeCount;
+    float timing;
+   // NotesGenerator notesGenerator;
+    //GameObject notesGenerator;
 
     // Use this for initialization
     void Start()
     {
+        //notesGenerator = GetComponent<NotesGenerator>();
+        //notesGenerator = GameObject.Find("NotesGenerator").GetComponent<NotesGenerator>();
+        //timeCount = notesGenerator.timeCount;
+        //timing = notesGenerator.timing;
+        gameManager = GetComponent<GameManager>();
         transform.position = InitialPosition;//初期位置にする
+
+        // Laneの使用状況初期化
+        //if (notesGenerator.TimingCheck() == false)
+        //{
+        //    for (int i = 0; i < 4; i++)
+        //    {
+        //        useLaneFlg[i] = false;
+        //    }
+        //}
+
+        // Notes出現位置ランダム設定
         randomVec = Random.Range(0, 4);
-        switch (3)
+
+        // ランダム指定位置がすでに同じタイミングで他のNotesが使用しているかチェック
+        //while (useLaneFlg[randomVec])
+        //{
+        //    // Notes使用中のためもう一度ランダム
+        //    randomVec = Random.Range(0, 4);
+        //}
+
+        // 現在の指定位置を使用中に変更
+        //useLaneFlg[randomVec] = true;
+
+        switch (randomVec)
         {
             case 0:
                 UpperLeft();
@@ -39,8 +71,9 @@ public class NotesControl1 : MonoBehaviour {
         //transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
-            
             Destroy(gameObject);    //画面外に出たら消す
+            GameManager.MissCount++;
+            GameManager.ComboCount = 0;
         }
             scale += 0.018f;
         if (scale>=1)
@@ -63,7 +96,7 @@ public class NotesControl1 : MonoBehaviour {
     //右上に進むクラス
     public void UpperRight()
     {
-        Debug.Log(2);
+
         xspeed = 0.1f;
         yspeed = 0.05f;
     }
@@ -81,4 +114,16 @@ public class NotesControl1 : MonoBehaviour {
         xspeed = 0.1f;
         yspeed = -0.05f;
     }
+
+    //public bool TimingCheck()
+    //{
+    //    if (timeCount > 0)
+    //    {
+    //        if (timing[timeCount] == timing[timeCount - 1])
+    //        {
+    //            return true;
+    //        }
+    //    }
+    //    return false;
+    //}
 }

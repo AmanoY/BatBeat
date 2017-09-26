@@ -9,15 +9,23 @@ GameObject:
   m_Component:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 4: {fileID: 446504}
 =======
 =======
 >>>>>>> 537e07d2631b61465c3adebce33cbd7aed926dba
+=======
+=======
+  - 4: {fileID: 446504}
+=======
+>>>>>>> origin/Masato
+>>>>>>> 241cbd7b628dcbe8c32dc5e012fb18f510e7d110
 <<<<<<< HEAD
   - 4: {fileID: 475760}
 =======
   - 4: {fileID: 452914}
 >>>>>>> origin/dispotherchara1
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
 =======
@@ -25,6 +33,14 @@ GameObject:
   - 4: {fileID: 446504}
 >>>>>>> origin/amano
 >>>>>>> 537e07d2631b61465c3adebce33cbd7aed926dba
+=======
+=======
+  - 4: {fileID: 446504}
+>>>>>>> origin/amano
+=======
+>>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
+>>>>>>> origin/Masato
+>>>>>>> 241cbd7b628dcbe8c32dc5e012fb18f510e7d110
   m_Layer: 0
   m_Name: NortsParticleSystem
   m_TagString: Untagged
@@ -34,15 +50,23 @@ GameObject:
   m_IsActive: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &446504
 =======
 =======
 >>>>>>> 537e07d2631b61465c3adebce33cbd7aed926dba
+=======
+=======
+--- !u!4 &446504
+=======
+>>>>>>> origin/Masato
+>>>>>>> 241cbd7b628dcbe8c32dc5e012fb18f510e7d110
 <<<<<<< HEAD
 --- !u!4 &475760
 =======
 --- !u!4 &452914
 >>>>>>> origin/dispotherchara1
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
 =======
@@ -50,6 +74,14 @@ GameObject:
 --- !u!4 &446504
 >>>>>>> origin/amano
 >>>>>>> 537e07d2631b61465c3adebce33cbd7aed926dba
+=======
+=======
+--- !u!4 &446504
+>>>>>>> origin/amano
+=======
+>>>>>>> 868c62a6ec13f72d8ffd66e01e1f1e5774bcb736
+>>>>>>> origin/Masato
+>>>>>>> 241cbd7b628dcbe8c32dc5e012fb18f510e7d110
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

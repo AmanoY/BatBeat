@@ -19,32 +19,29 @@ public class TouchManager : MonoBehaviour
         if (touched)
         {
             Lane = transform.position;
-            Notes = collision.gameObject.transform.position;
+            Notes = gameObject.transform.position;
             dir = Lane - Notes;
             float d = dir.magnitude;
 
-            //ミスの判定
-            //Debug.Log(collision.gameObject.transform.position)
-            if (d<=1.4&&d>=1.3)
-            {
-                Destroy(collision.gameObject);
-                gameManeger.MissComboCount();
-            }
 
-            //goodの判定
-            else if (d<=1.29&&d>=1)
+            if ( d <= 1.0f)
             {
-                Destroy(collision.gameObject);
-                gameManeger.GoodComboCount();
-            }
-
-            //perfectの判定
-            else if (d >= 0&&d<=0.99)
-            {
+                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.PerfectComboCount();
             }
-
+            else if( d <= 3.0f )
+            {
+                Debug.Log(d);
+                Destroy(collision.gameObject);
+                gameManeger.GoodComboCount();
+            }
+            else if( d<=6.0f)
+            {
+                Debug.Log(d);
+                Destroy(collision.gameObject);
+                gameManeger.MissComboCount();
+            }
             touched = false;
         }
     }
@@ -67,11 +64,6 @@ public class TouchManager : MonoBehaviour
         touched = false;
     }
 
-
-    public void RangeDetection()
-    {
-    }
-
     // Use this for initialization
     void Start()
     { 
@@ -80,7 +72,6 @@ public class TouchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
 
     }
 }
