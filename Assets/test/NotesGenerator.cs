@@ -7,7 +7,7 @@ public class NotesGenerator : MonoBehaviour
 
     int timeCount = 0;
 
-    static int difficulty = 1;
+    public static int difficulty = 1;
     //Notesを発生させる時間
     public float[] timingEasy =
     {
@@ -103,269 +103,16 @@ public class NotesGenerator : MonoBehaviour
 80f,
 82.4f,
     };
-
-    public float[] timingNormal = {
-3.1f,
-3.5f,
-3.9f,
-4.8f,
-5.4f,
-5.9f,
-6.4f,
-6.9f,
-7.2f,
-7.8f,
-8.3f,
-8.7f,
-9.3f,
-9.7f,
-10.2f,
-10.6f,
-10.8f,
-11.1f,
-11.4f,
-11.7f,
-12f,
-12.4f,
-12.6f,
-12.9f,
-13.1f,
-13.2f,
-13.8f,
-14.3f,
-12.6f,
-15.1f,
-15.3f,
-15.5f,
-15.6f,
-15.9f,
-16.2f,
-16.5f,
-17.1f,
-17.4f,
-17.8f,
-17.9f,
-18f,
-18.3f,
-18.6f,
-19.1f,
-19.5f,
-19.9f,
-20.3f,
-21.6f,
-22.3f,
-22.7f,
-23.1f,
-23.4f,
-23.9f,
-24.3f,
-24.7f,
-25f,
-25.3f,
-25.5f,
-25.7f,
-25.8f,
-26f,
-26.3f,
-26.7f,
-27f,
-27.5f,
-27.9f,
-28.3f,
-28.7f,
-29f,
-29.2f,
-29.5f,
-29.7f,
-29.9f,
-30f,
-30.4f,
-30.6f,
-31.1f,
-31.6f,
-31.8f,
-32.2f,
-32.3f,
-32.5f,
-32.7f,
-32.9f,
-33.1f,
-33.2f,
-33.5f,
-33.8f,
-34.2f,
-34.7f,
-34.9f,
-35.2f,
-35.4f,
-35.9f,
-36.3f,
-36.6f,
-37.1f,
-37.5f,
-37.9f,
-38.3f,
-38.6f,
-39f,
-39.4f,
-39.5f,
-39.9f,
-40.1f,
-40.2f,
-40.4f,
-40.7f,
-41.1f,
-41.4f,
-41.9f,
-42.3f,
-42.6f,
-43.1f,
-43.6f,
-43.9f,
-44f,
-44.5f,
-44.7f,
-45f,
-45.3f,
-45.5f,
-45.9f,
-46.2f,
-46.5f,
-46.9f,
-47.1f,
-47.4f,
-47.8f,
-48.2f,
-49.1f,
-49.5f,
-49.8f,
-50.3f,
-50.7f,
-51f,
-51.3f,
-51.6f,
-51.9f,
-52.2f,
-52.6f,
-52.8f,
-53.2f,
-53.4f,
-54.3f,
-54.4f,
-54.6f,
-54.9f,
-55.2f,
-55.5f,
-55.7f,
-56.1f,
-56.4f,
-56.7f,
-56.8f,
-57.1f,
-57.3f,
-57.6f,
-57.9f,
-58.1f,
-58.5f,
-58.8f,
-59.1f,
-59.3f,
-59.4f,
-59.7f,
-0f,
-60.3f,
-0f,
-60.6f,
-61f,
-61.2f,
-61.5f,
-61.9f,
-62.1f,
-62.4f,
-62.7f,
-63f,
-63.3f,
-63.7f,
-63.9f,
-64.1f,
-64.2f,
-64.6f,
-64.8f,
-65.1f,
-65.3f,
-65.9f,
-66f,
-66.3f,
-66.5f,
-66.7f,
-66.9f,
-67.2f,
-67.5f,
-67.7f,
-68f,
-68.3f,
-68.7f,
-68.8f,
-69.5f,
-70f,
-70.2f,
-70.5f,
-70.8f,
-71.1f,
-71.4f,
-71.7f,
-72f,
-72.3f,
-72.6f,
-72.9f,
-73.2f,
-73.5f,
-73.8f,
-74.3f,
-74.7f,
-75.2f,
-75.7f,
-76.2f,
-76.7f,
-77.1f,
-77.7f,
-77.9f,
-78.3f,
-78.6f,
-79.1f,
-79.5f,
-80.3f,
-80.4f,
-81f,
-81.3f,
-81.6f,
-82f,
-82.2f,
-82.5f,
-82.8f,
-83.1f,
-83.4f,
-
-    };
-
     public GameObject notesPrefab;
     // NotesControl1 Notes;
 
-    // Use this for initialization
-    void Start()
-    {
-
-        timeCount = 0;
-        timer = 0.0f;
-     //   Notes = GameObject.FindObjectOfType<NotesControl1>();
-    }
 
     // Update is called once per frame
     void Update()
     {
         //timerに時間を加算させ続ける
         timer += Time.deltaTime;
-        if (difficulty==0)
+        if (difficulty == 0)
         {
             //EasyのNotesを呼び出す
             for (timeCount = 0; timeCount < timingEasy.Length - 1; timeCount++)
@@ -379,23 +126,10 @@ public class NotesGenerator : MonoBehaviour
 
             }
         }
-        //NormalのNotesを呼び出す
-        if (difficulty == 1)
-        {
-            //EasyのNotesを呼び出す
-            for (timeCount = 0; timeCount < timingNormal.Length - 1; timeCount++)
-            {
-
-                if (timingNormal[timeCount] >= timer - Time.deltaTime / 2 && timingNormal[timeCount] <= timer + Time.deltaTime / 2)
-                {
-
-                    GameObject go = Instantiate(notesPrefab);
-                }
-
-            }
-        }
-
     }
+
+
+
     public void DifficultyChangeEasy()
     {
         difficulty = 0;

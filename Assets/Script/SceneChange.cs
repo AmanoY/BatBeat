@@ -13,7 +13,7 @@ public class SceneChange : MonoBehaviour
 
 
     //シーンを名前で飛ばす用
-    public void NextScene(string sceneName)
+    public void NextSceneName(string sceneName)
     {
         //もしボタン発動時にSE鳴らしたいならお使いください
         //ButtonSound.PlayOneShot(rankingButtonSound.clip);
@@ -23,7 +23,7 @@ public class SceneChange : MonoBehaviour
     }
 
     //シーンを数字で飛ばす用
-    public void NextScene(int sceneNumber)
+    public void NextSceneNumber(int sceneNumber)
     {
         SceneManager.LoadScene(sceneNumber);
     }
