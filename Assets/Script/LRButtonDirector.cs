@@ -7,14 +7,14 @@ public class LRButtonDirector: MonoBehaviour {
 
     GameObject GameObject;
 
-    int offset = 763;
+    int offset = 439;
     int tapCount = 0;
 
     // Use this for initialization
     void Start() {
         GameObject = GameObject.Find("GameObject");
 
-        GameObject.transform.position = new Vector3(282, 120, 0);
+        GameObject.transform.position = new Vector3(0, 0, 0);
     }
 
     public void MoveL() {

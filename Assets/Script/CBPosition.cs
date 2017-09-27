@@ -10,6 +10,6 @@ public class CBPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localPosition = new Vector3(600, 0, 0);
+        transform.localPosition = new Vector3(900, 120, 0);
     }
 }
