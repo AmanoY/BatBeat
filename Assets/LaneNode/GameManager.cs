@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
         TotalScore += PerfectsScore;
         if (ComboCount%50==0)
         {
-            TotalScore += 1000;
+            GameData.score += 1000;
         }
         GameData.Setperfectcombo(1);
         GameData.SetScore(PerfectsScore);
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour {
         TotalScore+= GoodScore;
         if (ComboCount % 50 == 0)
         {
-            TotalScore += 1000;
+            GameData.score += 1000;
         }
         GameData.Setgoodcombo(1);
         GameData.SetScore(GoodScore);
