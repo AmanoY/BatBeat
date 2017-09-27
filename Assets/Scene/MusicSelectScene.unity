@@ -262,7 +262,7 @@ RectTransform:
   m_Children:
   - {fileID: 1513891348}
   m_Father: {fileID: 2082882333}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 320, y: 185}
@@ -364,6 +364,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcdd61e85135944c9dd03c5ec527f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &744844698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 744844700}
+  - 114: {fileID: 744844699}
+  m_Layer: 0
+  m_Name: LRButtonDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &744844699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744844698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &744844700
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744844698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &764992382
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +546,7 @@ GameObject:
   - 114: {fileID: 910513200}
   - 114: {fileID: 910513199}
   - 114: {fileID: 910513202}
+  - 114: {fileID: 910513203}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -522,14 +562,14 @@ RectTransform:
   m_GameObject: {fileID: 910513197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70625, y: 0.70625, z: 1}
   m_Children:
   - {fileID: 1235148216}
-  m_Father: {fileID: 2082882333}
-  m_RootOrder: 1
+  m_Father: {fileID: 1102015101}
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -60}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910513199
@@ -628,6 +668,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcdd61e85135944c9dd03c5ec527f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &910513203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 910513197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597e8f3a225567143b4b759add98ea96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024540322
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +690,6 @@ GameObject:
   - 222: {fileID: 1024540327}
   - 114: {fileID: 1024540326}
   - 114: {fileID: 1024540325}
-  - 114: {fileID: 1024540324}
   m_Layer: 5
   m_Name: LButton
   m_TagString: Untagged
@@ -658,25 +708,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2082882333}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 80, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1024540324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024540322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSelect: []
-  tapCount: 0
 --- !u!114 &1024540325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +753,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1024540324}
+      - m_Target: {fileID: 744844699}
         m_MethodName: MoveL
         m_Mode: 1
         m_Arguments:
@@ -774,6 +811,7 @@ GameObject:
   - 114: {fileID: 1075327270}
   - 114: {fileID: 1075327269}
   - 114: {fileID: 1075327272}
+  - 114: {fileID: 1075327273}
   m_Layer: 5
   m_Name: CenterButton
   m_TagString: Untagged
@@ -789,14 +827,14 @@ RectTransform:
   m_GameObject: {fileID: 1075327267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70625, y: 0.70625, z: 1}
   m_Children:
   - {fileID: 903277526}
-  m_Father: {fileID: 2082882333}
-  m_RootOrder: 2
+  m_Father: {fileID: 1102015101}
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 600, y: -60}
+  m_AnchoredPosition: {x: 600, y: 0}
   m_SizeDelta: {x: 250, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075327269
@@ -895,6 +933,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcdd61e85135944c9dd03c5ec527f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1075327273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075327267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75adeef172818fa4a8b9edc21f25a886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1102015099
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,11 +971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSelect:
-  - {fileID: 910513197}
-  - {fileID: 1075327267}
-  - {fileID: 1497680909}
-  tapCount: 0
 --- !u!4 &1102015101
 Transform:
   m_ObjectHideFlags: 0
@@ -935,9 +979,12 @@ Transform:
   m_GameObject: {fileID: 1102015099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_Children:
+  - {fileID: 910513198}
+  - {fileID: 1075327268}
+  - {fileID: 1497680910}
+  m_Father: {fileID: 2082882333}
   m_RootOrder: 4
 --- !u!1 &1235148215
 GameObject:
@@ -1024,6 +1071,7 @@ GameObject:
   - 114: {fileID: 1497680912}
   - 114: {fileID: 1497680911}
   - 114: {fileID: 1497680914}
+  - 114: {fileID: 1497680915}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -1039,14 +1087,14 @@ RectTransform:
   m_GameObject: {fileID: 1497680909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70625, y: 0.70625, z: 1}
   m_Children:
   - {fileID: 231771133}
-  m_Father: {fileID: 2082882333}
-  m_RootOrder: 3
+  m_Father: {fileID: 1102015101}
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1200, y: -60}
+  m_AnchoredPosition: {x: 1200, y: 0}
   m_SizeDelta: {x: 250, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497680911
@@ -1143,6 +1191,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adcdd61e85135944c9dd03c5ec527f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1497680915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497680909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942eac41126aacb459e52dd394f898b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1513891347
@@ -1450,12 +1509,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 121944897}
-  - {fileID: 910513198}
-  - {fileID: 1075327268}
-  - {fileID: 1497680910}
   - {fileID: 457406840}
   - {fileID: 2113210487}
   - {fileID: 1024540323}
+  - {fileID: 1102015101}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
@@ -1474,7 +1531,6 @@ GameObject:
   - 222: {fileID: 2113210491}
   - 114: {fileID: 2113210490}
   - 114: {fileID: 2113210489}
-  - 114: {fileID: 2113210488}
   m_Layer: 5
   m_Name: RButton
   m_TagString: Untagged
@@ -1493,25 +1549,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2082882333}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -80, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2113210488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2113210486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c2c948bb258f4dab51bcfab9ae81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSelect: []
-  tapCount: 0
 --- !u!114 &2113210489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,7 +1594,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2113210488}
+      - m_Target: {fileID: 744844699}
         m_MethodName: MoveR
         m_Mode: 1
         m_Arguments:
