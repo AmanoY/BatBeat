@@ -71,9 +71,9 @@ public class NotesControl1 : MonoBehaviour {
         //transform.Translate(-0.1f, 0.05f, 0.0f);     //左上
         if (transform.position.x > 10.0f || transform.position.x < -10.0f)
         {
-            Destroy(gameObject);    //画面外に出たら消す
-            GameManager.MissCount++;
+            GameData.misscombo++;
             GameManager.ComboCount = 0;
+            Destroy(gameObject);    //画面外に出たら消す
         }
             scale += 0.018f;
         if (scale>=1)

@@ -280,7 +280,7 @@ public class NotesGenerator2 : MonoBehaviour
 
             }
         }
-        if (timer >= 10)
+        if (timer >= 90)
         {
             sceneChange.NextSceneNumber(4);
         }

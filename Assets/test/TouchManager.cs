@@ -27,19 +27,17 @@ public class TouchManager : MonoBehaviour
 
             if ( d <= 1.0f)
             {
-                Debug.Log(d);
+                GetComponent<AudioSource>().Play();
                 Destroy(collision.gameObject);
                 gameManeger.PerfectComboCount();
             }
             else if( d <= 3.0f )
             {
-                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.GoodComboCount();
             }
             else if( d<=6.0f)
             {
-                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.MissComboCount();
             }

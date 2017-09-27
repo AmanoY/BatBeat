@@ -16,7 +16,7 @@ public class perfectResultLabel : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        int perfectCount = GameManager.PerfectCount;
+        int perfectCount = GameData.perfectcombo;
         perfectText.text = ""+perfectCount;
     }
 }
