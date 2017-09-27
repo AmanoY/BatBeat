@@ -44,10 +44,10 @@ public class GameManager : MonoBehaviour {
         TotalScore += PerfectsScore;
         if (ComboCount%50==0)
         {
-            TotalScore += 1000;
+            GameData.score += 1000;
         }
         GameData.Setperfectcombo(1);
-        GameData.SetScore(TotalScore);
+        GameData.SetScore(PerfectsScore);
     }
 
     //Goodの判定の時に呼び出されるメソッド
@@ -58,10 +58,10 @@ public class GameManager : MonoBehaviour {
         TotalScore+= GoodScore;
         if (ComboCount % 50 == 0)
         {
-            TotalScore += 1000;
+            GameData.score += 1000;
         }
         GameData.Setgoodcombo(1);
-        GameData.SetScore(TotalScore);
+        GameData.SetScore(GoodScore);
     }
 
     //Missの判定の時に呼び出されるメソッド
@@ -72,18 +72,5 @@ public class GameManager : MonoBehaviour {
         GameData.Setmisscombo(1);
     }
 
-    //リザルト画面をタップした時に呼び出すscript
-    public void ResetGame()
-    {
-        ComboCount = 0;
-        MaxComboCount = 0;
-        PerfectCount = 0;
-        GoodCount = 0;
-        MissCount = 0;
-        TotalScore = 0;
-    }
-    public static void Record()
-    {
-    }
 
 }

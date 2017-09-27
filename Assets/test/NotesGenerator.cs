@@ -7,7 +7,7 @@ public class NotesGenerator : MonoBehaviour
 
     int timeCount = 0;
 
-    public static int difficulty = 1;
+    public static int difficulty = 0;
     //Notesを発生させる時間
     public float[] timingEasy =
     {

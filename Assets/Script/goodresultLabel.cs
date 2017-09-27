@@ -17,7 +17,7 @@ public class goodresultLabel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int goodCount = GameManager.GoodCount;
+        int goodCount = GameData.goodcombo;
         goodText.text = "" + goodCount;
     }
 }

@@ -16,7 +16,7 @@ public class MaxComboresultLabel : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        int MaxCombo = GameManager.MaxComboCount;
+        int MaxCombo = GameData.Maxcombo;
         MaxComboText.text = "" + MaxCombo;
     }
 }

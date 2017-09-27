@@ -14,6 +14,7 @@ public class GoSelectScene : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             sceceChange.NextSceneNumber(2);
+            GameData.Reset();
         }
 	}
 }

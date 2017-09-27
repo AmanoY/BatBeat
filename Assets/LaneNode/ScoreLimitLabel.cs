@@ -19,7 +19,7 @@ public class ScoreLimitLabel : MonoBehaviour {
     // Update is called once per frames
     void Update()
     {
-        int Score = GameManager.TotalScore;
+        int Score = GameData.score;
         ScoreText.text =""+Score;
     }
 }

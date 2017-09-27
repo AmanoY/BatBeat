@@ -1,10 +1,10 @@
 ﻿public static class GameData{
 
-    private static int score;
-    private static int Maxcombo;
-    private static int perfectcombo;
-    private static int goodcombo;
-    private static int misscombo;
+    public static int score;
+    public static int Maxcombo;
+    public static int perfectcombo;
+    public static int goodcombo;
+    public static int misscombo;
 
     public static int GetScore()
     {
@@ -17,7 +17,7 @@
     }
     public static void SetCombo(int param)
     {
-        Maxcombo += param;
+        Maxcombo = param;
     }
     public static void Setperfectcombo(int param)
     {
@@ -30,5 +30,13 @@
     public static void Setmisscombo(int param)
     {
         misscombo = +param;
+    }
+    public static void Reset()
+    {
+        score = 0;
+        Maxcombo = 0;
+        perfectcombo = 0;
+        goodcombo = 0;
+        misscombo = 0;
     }
 }

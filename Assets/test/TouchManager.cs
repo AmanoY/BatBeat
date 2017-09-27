@@ -13,16 +13,6 @@ public class TouchManager : MonoBehaviour
     float d;
     int Count = 0;
 
-    public ParticleSystem perfect;
-    public ParticleSystem good;
-    public ParticleSystem miss;
-
-    void PerfectDestroy()
-    {
-        Debug.Log("dd");
-        perfect.Play();
-
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         
@@ -37,23 +27,17 @@ public class TouchManager : MonoBehaviour
 
             if ( d <= 1.0f)
             {
-                Invoke("PerfectDestroy", 1.0f);
-                Debug.Log(d);
+                GetComponent<AudioSource>().Play();
                 Destroy(collision.gameObject);
                 gameManeger.PerfectComboCount();
-                
             }
             else if( d <= 3.0f )
             {
-                good.Play();
-
-                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.GoodComboCount();
             }
             else if( d<=6.0f)
             {
-                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.MissComboCount();
             }
@@ -85,9 +69,7 @@ public class TouchManager : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
-        perfect = GetComponent<ParticleSystem>();
-       // perfect.Stop();
+    { 
     }
 
     // Update is called once per frame

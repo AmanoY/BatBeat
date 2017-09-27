@@ -16,7 +16,7 @@ public class ScoreResultLabel : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        int Score = GameManager.TotalScore;
+        int Score = GameData.GetScore();
         ScoreText.text = "" + Score;
     }
 }

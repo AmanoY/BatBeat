@@ -17,7 +17,7 @@ public class MissresultLabel : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        int MissCount = GameManager.MissCount;
+        int MissCount = GameData.misscombo;
         MissText.text = "" + MissCount;
     }
 }
