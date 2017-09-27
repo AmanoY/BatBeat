@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
     public static int TotalScore ;
     int PerfectsScore = 100;
     int GoodScore = 50;
-
+  
     // Use this for initialization
     void Start () {
         //値を初期化
@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour {
     //Perfectの判定の時に呼び出されるメソッド
     public void PerfectComboCount()
     {
+        
         ComboCount++;
         PerfectCount++;
         TotalScore += PerfectsScore;

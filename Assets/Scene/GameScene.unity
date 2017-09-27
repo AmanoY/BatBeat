@@ -570,6 +570,11 @@ Prefab:
       propertyPath: gameManeger
       value: 
       objectReference: {fileID: 105133283}
+    - target: {fileID: 11424396, guid: e2681878c29082140b110a1c43204272, type: 2}
+      propertyPath: perfect
+      value: 
+      objectReference: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2681878c29082140b110a1c43204272, type: 2}
   m_IsPrefabParent: 0
@@ -1021,6 +1026,11 @@ Prefab:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11424396, guid: e2681878c29082140b110a1c43204272, type: 2}
+      propertyPath: perfect
+      value: 
+      objectReference: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2681878c29082140b110a1c43204272, type: 2}
   m_IsPrefabParent: 0
@@ -1302,6 +1312,11 @@ Prefab:
       propertyPath: gameManeger
       value: 
       objectReference: {fileID: 105133283}
+    - target: {fileID: 11424396, guid: e2681878c29082140b110a1c43204272, type: 2}
+      propertyPath: perfect
+      value: 
+      objectReference: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2681878c29082140b110a1c43204272, type: 2}
   m_IsPrefabParent: 0
@@ -1368,6 +1383,11 @@ Prefab:
       propertyPath: gameManeger
       value: 
       objectReference: {fileID: 105133283}
+    - target: {fileID: 11424396, guid: e2681878c29082140b110a1c43204272, type: 2}
+      propertyPath: perfect
+      value: 
+      objectReference: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2681878c29082140b110a1c43204272, type: 2}
   m_IsPrefabParent: 0
