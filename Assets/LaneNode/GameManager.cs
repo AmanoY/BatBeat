@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour {
         {
             GameData.score += 1000;
         }
-        GameData.Setperfectcombo(1);
+        GameData.perfectcombo++;
         GameData.SetScore(PerfectsScore);
     }
 
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour {
         {
             GameData.score += 1000;
         }
-        GameData.Setgoodcombo(1);
+        GameData.goodcombo++;
         GameData.SetScore(GoodScore);
     }
 
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour {
     {
         ComboCount=0;
         MissCount++;
-        GameData.Setmisscombo(1);
+        GameData.misscombo++;
     }
 
 

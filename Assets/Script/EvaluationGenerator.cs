@@ -25,7 +25,7 @@ public class EvaluationGenerator : MonoBehaviour {
         MusicSelectNumber[3, 0] = 5;
         MusicSelectNumber[3, 1] = 6;
 
-        Evaluation[1, 1, 1] = 10000;
+        Evaluation[1, 1, 1] = 10100;
         Evaluation[1, 1, 2] = 8080;
         Evaluation[1, 1, 3] = 6060;
         Evaluation[1, 1, 4] = 4040;
