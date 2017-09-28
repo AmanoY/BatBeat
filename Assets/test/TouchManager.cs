@@ -13,26 +13,43 @@ public class TouchManager : MonoBehaviour
     float d;
     int Count = 0;
 
+    public ParticleSystem perfect;
+    public ParticleSystem good;
+    public ParticleSystem miss;
+
+    void PerfectDestroy()
+    {
+        Debug.Log("dd");
+
+
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         
         //押している最中は削除
         if (touched)
         {
+
             Lane = transform.position;
             Notes = gameObject.transform.position;
-            dir = Lane - Notes;
+            dir = Notes - Lane;
             float d = dir.magnitude;
-
+            Debug.Log(d);
 
             if ( d <= 1.0f)
             {
                 GetComponent<AudioSource>().Play();
+                Invoke("PerfectDestroy", 1.0f);
+                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.PerfectComboCount();
+                
             }
             else if( d <= 3.0f )
             {
+                good.Play();
+
+                Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.GoodComboCount();
             }
@@ -69,16 +86,19 @@ public class TouchManager : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    { 
+    {
+        perfect = GetComponent<ParticleSystem>();
+        NodePre = GameObject.Find("NotesObjectPrefab 1");
+       // perfect.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(IsTouchObject(gameObject))
-        {
-            touched = true;
-        }
+        //if(IsTouchObject(gameObject))
+        //{
+        //    touched = true;
+        //}
         //if (Input.touchCount>0)
         //{
         //    Debug.Log("たっちされたよ");
@@ -113,47 +133,55 @@ public class TouchManager : MonoBehaviour
         //}
     }
     // 引数のオブジェクトとタッチの当たり判定メソッド
-    public static bool IsTouchObject(GameObject _gameObj)
+    //public static bool IsTouchObject(GameObject _gameObj)
+    //{
+    //    // 画面タッチされた？
+    //    for (int i = 0; i < Input.touchCount; ++i)
+    //    {
+    //        Touch touch = Input.touches[i];
+
+    //        // タッチされた瞬間？
+    //        if (touch.phase == TouchPhase.Began)
+    //        {
+    //            // マウスのタッチ座標をワールド座標に変換
+    //            Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+    //            // タッチ座標を全て取得
+    //            Collider2D[] colliders = Physics2D.OverlapPointAll(pos);
+
+    //            // 判定したい当たり判定を持っているオブジェクトのID取得
+    //            int enemyID = _gameObj.gameObject.GetInstanceID();
+
+    //            // タッチ数分チェックする
+    //            foreach (Collider2D collider in colliders)
+    //            {
+    //                // コライダーのID取得
+    //                int colliderID = collider.gameObject.GetInstanceID();
+
+    //                // 両方のIDログ表示
+    //                //Debug.Log("enemyID:" + enemyID);
+    //                //Debug.Log("colliderID:" + colliderID);
+
+    //                // IDは同じ？
+    //                if (enemyID == colliderID)
+    //                {
+    //                    // 当ててんのよ
+    //                    Debug.Log("当たってる");
+    //                    return true;
+    //                }
+    //            }
+    //        }
+
+    //    }
+    //    return false;
+    //}
+    public void TouchButtonDown()
     {
-        // 画面タッチされた？
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            Touch touch = Input.touches[i];
-
-            // タッチされた瞬間？
-            if (touch.phase == TouchPhase.Began)
-            {
-                // マウスのタッチ座標をワールド座標に変換
-                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-                // タッチ座標を全て取得
-                Collider2D[] colliders = Physics2D.OverlapPointAll(pos);
-
-                // 判定したい当たり判定を持っているオブジェクトのID取得
-                int enemyID = _gameObj.gameObject.GetInstanceID();
-
-                // タッチ数分チェックする
-                foreach (Collider2D collider in colliders)
-                {
-                    // コライダーのID取得
-                    int colliderID = collider.gameObject.GetInstanceID();
-
-                    // 両方のIDログ表示
-                    //Debug.Log("enemyID:" + enemyID);
-                    //Debug.Log("colliderID:" + colliderID);
-
-                    // IDは同じ？
-                    if (enemyID == colliderID)
-                    {
-                        // 当ててんのよ
-                        Debug.Log("当たってる");
-                        return true;
-                    }
-                }
-            }
-
-        }
-        return false;
+        touched = true;
+    }
+    public void TouchButtonUp()
+    {
+        touched = false;
     }
 }
 
