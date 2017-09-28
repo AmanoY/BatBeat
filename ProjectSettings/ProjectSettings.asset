@@ -11,7 +11,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: BatBeat
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 275ff350fcff78d4188d762a160f5563, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
   m_VirtualRealitySplashScreen: {fileID: 0}
@@ -173,7 +173,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 275ff350fcff78d4188d762a160f5563, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
