@@ -9,92 +9,97 @@ public class NotesGenerator3 : MonoBehaviour {
 
     int timeCount = 0;
 
+    bool Chain;
+
     NotesGenerator difficulty;
     public SceneChange sceneChange;
     public GameObject notesPrefab;
 
+    int Timer;
+
     float[] ReaperEasy =
     {
-2.675f,
-5.64f,
-7.128f,
-8.655f,
-10.086f,
-11.58f,
-13.078f,
-14.535f,
-16.002f,
-17.51f,
-19.071f,
-20.708f,
-22.044f,
-23.586f,
-25.095f,
-26.603f,
-27.996f,
-29.59f,
-31.078f,
-32.673f,
-34.014f,
-35.6f,
-37.026f,
-38.569f,
-40.036f,
-41.678f,
-42.103f,
-43.145f,
-44.683f,
-45.031f,
-46.178f,
-48.344f,
-49.066f,
-49.754f,
-50.512f,
-51.233f,
-52.053f,
-52.85f,
-53.762f,
-56.601f,
-59.655f,
-62.671f,
-65.617f,
-66.392f,
-67.084f,
-67.872f,
-68.627f,
-69.414f,
-70.142f,
-70.845f,
-71.592f,
-73.162f,
-74.662f,
-76.082f,
-77.617f,
-79.109f,
-80.549f,
-82.072f,
-83.634f,
-84.053f,
-85.125f,
-86.652f,
-87.059f,
-88.097f,
+7.675f,
+10.64f,
+12.128f,
+13.655f,
+15.086f,
+16.58f,
+18.078f,
+19.535f,
+21.002f,
+22.51f,
+24.071f,
+25.708f,
+27.044f,
+28.586f,
+30.095f,
+31.603f,
+32.996f,
+34.59f,
+36.078f,
+37.673f,
+39.014f,
+40.6f,
+42.026f,
+43.569f,
+45.036f,
+46.678f,
+47.103f,
+48.145f,
+49.683f,
+50.031f,
+51.178f,
+53.344f,
+54.066f,
+54.754f,
+55.512f,
+56.233f,
+57.053f,
+57.85f,
+58.762f,
+61.601f,
+64.655f,
+67.671f,
+70.617f,
+71.392f,
+72.084f,
+72.872f,
+73.627f,
+74.414f,
+75.142f,
+75.845f,
+76.592f,
+78.162f,
+79.662f,
+81.082f,
+82.617f,
+84.109f,
+85.549f,
+87.072f,
+88.634f,
+89.053f,
+90.125f,
+91.652f,
+92.059f,
+93.097f,
 
     };
     // Use this for initialization
     void Start ()
     {
-	
-	}
+        Chain = true;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
 	        //timerに時間を加算させ続ける
         timer += Time.deltaTime;
-        if (timer>=5)
+        if (timer >= 5 && (Chain))
         {
-
+            GetComponent<AudioSource>().Play();
+            Chain = false;
         }
         if (GameData.DifficultyChange == 0)
         {
@@ -110,7 +115,7 @@ public class NotesGenerator3 : MonoBehaviour {
 
             }
         }
-        if (timer >= 90)
+        if (timer >= 98)
         {
             SceneManager.LoadScene("ClearScene");
         }
