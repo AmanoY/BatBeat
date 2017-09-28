@@ -31,7 +31,7 @@ public class EvaluationGenerator : MonoBehaviour {
         Evaluation[1, 1, 4] = 4040;
         Evaluation[1, 1, 5] = 2020;
 
-        Evaluation[1, 2, 1] = 28000;
+        Evaluation[1, 2, 1] = 27400;
         Evaluation[1, 2, 2] = 22400;
         Evaluation[1, 2, 3] = 16800;
         Evaluation[1, 2, 4] = 11200;
