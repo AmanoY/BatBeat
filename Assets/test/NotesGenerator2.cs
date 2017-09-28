@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NotesGenerator2 : MonoBehaviour
 {
@@ -279,9 +280,9 @@ public class NotesGenerator2 : MonoBehaviour
 
             }
         }
-        if (timer >= 90)
+        if (timer >= 85)
         {
-            sceneChange.NextSceneNumber(4);
+            SceneManager.LoadScene("ClearScene");
         }
 
     }

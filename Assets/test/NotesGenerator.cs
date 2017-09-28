@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class NotesGenerator : MonoBehaviour
 {
     float timer = 0.0f;
@@ -124,6 +124,10 @@ public class NotesGenerator : MonoBehaviour
                 }
 
             }
+        }
+        if (timer >= 85)
+        {
+            SceneManager.LoadScene("ClearScene");
         }
     }
 

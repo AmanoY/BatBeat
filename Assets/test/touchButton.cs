@@ -25,17 +25,17 @@ public class touchButton : MonoBehaviour {
     {
         if (GameData.MusicSelectCount == 0)
         {
-            Debug.Log("マイライフ");
+            GameData.MusicNumber = 1;
             SceneManager.LoadScene("GameScene1");
         }
         if (GameData.MusicSelectCount == 1)
         {
-            Debug.Log("呪いの館");
+            GameData.MusicNumber = 2;
             SceneManager.LoadScene("GameScene2");
         }
         if (GameData.MusicSelectCount == 2)
         {
-            Debug.Log("死神のワロス");
+            GameData.MusicNumber = 3;
             SceneManager.LoadScene("GameScene3");
         }
     }

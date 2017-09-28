@@ -11,13 +11,19 @@ public class EvaluationGenerator : MonoBehaviour {
     Vector2 B = new Vector2(-24, 0);
     Vector2 C = new Vector2(-44, 0);
 
-    int[,] MusicSelectNumber = new int[3, 2];
+    int[,] MusicSelectNumber = new int[4, 3];
 
     //評価を決めるScore
     int[,,] Evaluation = new int[4,3,6];//[曲番号 , 難易度 , Score]
     
     void Start ()
     {
+        MusicSelectNumber[1, 0] = 1;
+        MusicSelectNumber[1, 1] = 2;
+        MusicSelectNumber[2, 0] = 3;
+        MusicSelectNumber[2, 1] = 4;
+        MusicSelectNumber[3, 0] = 5;
+        MusicSelectNumber[3, 1] = 6;
 
         Evaluation[1, 1, 1] = 10000;
         Evaluation[1, 1, 2] = 8080;
@@ -25,43 +31,39 @@ public class EvaluationGenerator : MonoBehaviour {
         Evaluation[1, 1, 4] = 4040;
         Evaluation[1, 1, 5] = 2020;
 
-        Evaluation[1, 2, 1] = 10000;
-        Evaluation[1, 2, 2] = 8080;
-        Evaluation[1, 2, 3] = 6060;
-        Evaluation[1, 2, 4] = 4040;
-        Evaluation[1, 2, 5] = 2000;
+        Evaluation[1, 2, 1] = 28000;
+        Evaluation[1, 2, 2] = 22400;
+        Evaluation[1, 2, 3] = 16800;
+        Evaluation[1, 2, 4] = 11200;
+        Evaluation[1, 2, 5] = 5600;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (MusicSelectNumber[1,1]==1)
+        if (MusicSelectNumber[GameData.MusicNumber,GameData.DifficultyChange]==1)
         {
             ItsmyLifeEasy();
         }
-        if (GameData.score == Evaluation[1, 1, 1])
+        else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 2)
         {
-            transform.position = SSS;
+            ItsmyLifeNormal();
         }
-        else if (GameData.score >= Evaluation[1, 1, 2])
+        if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 3)
         {
-            transform.position = SS;
+            ItsmyLifeEasy();
         }
-        else if (GameData.score >= Evaluation[1, 1, 3])
+        else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 4)
         {
-            transform.position = S;
+            ItsmyLifeNormal();
         }
-        else if (GameData.score >= Evaluation[1, 1, 4])
+        if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 5)
         {
-            transform.position = A;
+            ItsmyLifeEasy();
         }
-        else if (GameData.score >= Evaluation[1, 1, 5])
+        else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 6)
         {
-            transform.position = B;
-        }
-        else if (GameData.score >= 0)
-        {
-            transform.position = C;
+            ItsmyLifeNormal();
         }
     }
     public void ItsmyLifeEasy()
@@ -86,7 +88,34 @@ public class EvaluationGenerator : MonoBehaviour {
         {
             transform.position = A;
         }
-        else
+        else if (GameData.score>=0)
+        {
+            transform.position = C;
+        }
+    }
+    public void ItsmyLifeNormal()
+    {
+        if (GameData.score == Evaluation[1, 2, 1])
+        {
+            transform.position = SSS;
+        }
+        else if (GameData.score >= Evaluation[1, 2, 2])
+        {
+            transform.position = SS;
+        }
+        else if (GameData.score >= Evaluation[1, 2, 3])
+        {
+            transform.position = S;
+        }
+        else if (GameData.score >= Evaluation[1, 2, 4])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= Evaluation[1, 2, 5])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= 0)
         {
             transform.position = C;
         }
