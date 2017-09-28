@@ -6,7 +6,6 @@ public class GoGameandBackScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -15,7 +14,8 @@ public class GoGameandBackScene : MonoBehaviour {
     }
 
     public void GoGameScene() {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("GameScene1");
+
     }
     public void BackButtonPush() {
         SceneManager.LoadScene("SelectScene");

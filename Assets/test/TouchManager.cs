@@ -31,11 +31,10 @@ public class TouchManager : MonoBehaviour
         {
 
             Lane = transform.position;
-            Notes = gameObject.transform.position;
+            Notes = collision.gameObject.transform.position;
             dir = Notes - Lane;
             float d = dir.magnitude;
             Debug.Log(d);
-
             if ( d <= 1.0f)
             {
                 GetComponent<AudioSource>().Play();
@@ -48,7 +47,7 @@ public class TouchManager : MonoBehaviour
             else if( d <= 3.0f )
             {
                 good.Play();
-
+                GetComponent<AudioSource>().Play();
                 Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.GoodComboCount();
@@ -95,6 +94,14 @@ public class TouchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            touched = true;
+        }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            touched = false;
+        }
         //if(IsTouchObject(gameObject))
         //{
         //    touched = true;
@@ -113,7 +120,7 @@ public class TouchManager : MonoBehaviour
         //            Debug.Log("判定はできてるよ");
         //            touched = true;
         //        }
-            
+
         //    }
         //    Touch touch2 = Input.GetTouch(1);
         //    if (touch2.phase == TouchPhase.Began)
@@ -180,6 +187,14 @@ public class TouchManager : MonoBehaviour
         touched = true;
     }
     public void TouchButtonUp()
+    {
+        touched = false;
+    }
+    public void KeychordDown()
+    {
+        touched = true;
+    }
+    public void KeychordUp()
     {
         touched = false;
     }

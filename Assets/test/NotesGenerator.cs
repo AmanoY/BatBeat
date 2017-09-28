@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class NotesGenerator : MonoBehaviour
 {
     float timer = 0.0f;
 
     int timeCount = 0;
 
-    public static int difficulty = 0;
     //Notesを発生させる時間
     public float[] timingEasy =
     {
@@ -112,7 +111,7 @@ public class NotesGenerator : MonoBehaviour
     {
         //timerに時間を加算させ続ける
         timer += Time.deltaTime;
-        if (difficulty == 0)
+        if (GameData.DifficultyChange == 0)
         {
             //EasyのNotesを呼び出す
             for (timeCount = 0; timeCount < timingEasy.Length - 1; timeCount++)
@@ -126,20 +125,10 @@ public class NotesGenerator : MonoBehaviour
 
             }
         }
+        if (timer >= 90)
+        {
+            SceneManager.LoadScene("ClearScene");
+        }
     }
 
-
-
-    public void DifficultyChangeEasy()
-    {
-        difficulty = 0;
-    }
-    public void DifficultyChangeNormal()
-    {
-        difficulty = 1;
-    }
-    public void DifficultyChangeHard()
-    {
-        difficulty = 2;
-    }
 }

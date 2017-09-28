@@ -5,6 +5,9 @@
     public static int perfectcombo;
     public static int goodcombo;
     public static int misscombo;
+    public static int MusicSelectCount;
+    public static int DifficultyChange;
+    public static int MusicNumber;
 
     public static int GetScore()
     {
