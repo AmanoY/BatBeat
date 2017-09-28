@@ -5,47 +5,28 @@ using System.Collections.Generic;
 
 public class LRButtonDirector: MonoBehaviour {
 
-    GameObject LeftButton;
-    GameObject CenterButton;
-    GameObject RightButton;
+    GameObject GameObject;
 
-    public List<GameObject> musicSelect = new List<GameObject>();
-
-    int offset = 423;
-    public int tapCount = 0;
+    int offset = 439;
+    int tapCount = 0;
 
     // Use this for initialization
     void Start() {
-        LeftButton = GameObject.Find("LeftButton");
-        CenterButton = GameObject.Find("CenterButton");
-        RightButton = GameObject.Find("RightButton");
+        GameObject = GameObject.Find("GameObject");
 
-        musicSelect.Add(LeftButton);
-        musicSelect.Add(CenterButton);
-        musicSelect.Add(RightButton);
+        GameObject.transform.position = new Vector3(0, 0, 0);
     }
 
     public void MoveL() {
         if(tapCount >= 0 && tapCount < 2) {
-            for(int i = 0; i < 3; i++) {
-                musicSelect[i].transform.Translate(-offset, 0f, 0);
-                if(tapCount >= 2) {
-                    tapCount = 2;
-                }
-            }
+            GameObject.transform.Translate(-offset, 0f, 0);
             tapCount++;
         }
     }
 
     public void MoveR() {
         if(tapCount > 0 && tapCount <= 2) {
-            for(int i = 0; i < 3; i++) {
-                musicSelect[i].transform.Translate(offset, 0f, 0);
-                Debug.Log("ああああああああ");
-                if(tapCount <= 0) {
-                    tapCount = 0;
-                }
-            }
+            GameObject.transform.Translate(+offset, 0f, 0);
             tapCount--;
         }
     }

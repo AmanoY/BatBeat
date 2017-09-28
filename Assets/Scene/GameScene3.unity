@@ -234,9 +234,9 @@ GameObject:
   - 114: {fileID: 303569419}
   - 114: {fileID: 303569418}
   - 50: {fileID: 303569417}
-  - 61: {fileID: 303569416}
   - 82: {fileID: 303569415}
   - 114: {fileID: 303569414}
+  - 58: {fileID: 303569416}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -382,8 +382,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!61 &303569416
-BoxCollider2D:
+--- !u!58 &303569416
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -393,9 +393,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.6, y: -4.5}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 357.3, y: 160.87851}
+  m_Radius: 200
 --- !u!50 &303569417
 Rigidbody2D:
   serializedVersion: 2
@@ -813,9 +813,9 @@ GameObject:
   - 114: {fileID: 1210051464}
   - 114: {fileID: 1210051463}
   - 50: {fileID: 1210051462}
-  - 61: {fileID: 1210051461}
   - 82: {fileID: 1210051460}
   - 114: {fileID: 1210051459}
+  - 58: {fileID: 1210051461}
   m_Layer: 5
   m_Name: Button4
   m_TagString: Untagged
@@ -961,8 +961,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!61 &1210051461
-BoxCollider2D:
+--- !u!58 &1210051461
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -972,9 +972,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.6, y: -4.5}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 357.3, y: 160.87851}
+  m_Radius: 200
 --- !u!50 &1210051462
 Rigidbody2D:
   serializedVersion: 2
@@ -1106,9 +1106,9 @@ GameObject:
   - 114: {fileID: 1253957006}
   - 114: {fileID: 1253957009}
   - 50: {fileID: 1253957011}
-  - 61: {fileID: 1253957010}
   - 82: {fileID: 1253957012}
   - 114: {fileID: 1253957013}
+  - 58: {fileID: 1253957010}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -1234,8 +1234,8 @@ MonoBehaviour:
   perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
   good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
   miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
---- !u!61 &1253957010
-BoxCollider2D:
+--- !u!58 &1253957010
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1245,9 +1245,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.6, y: -4.5}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 357.3, y: 160.87851}
+  m_Radius: 200
 --- !u!50 &1253957011
 Rigidbody2D:
   serializedVersion: 2
@@ -1704,9 +1704,9 @@ GameObject:
   - 114: {fileID: 1626414882}
   - 114: {fileID: 1626414881}
   - 50: {fileID: 1626414880}
-  - 61: {fileID: 1626414879}
   - 82: {fileID: 1626414878}
   - 114: {fileID: 1626414877}
+  - 58: {fileID: 1626414879}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -1852,8 +1852,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!61 &1626414879
-BoxCollider2D:
+--- !u!58 &1626414879
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1863,9 +1863,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0.6, y: -4.5}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 357.3, y: 160.87851}
+  m_Radius: 200
 --- !u!50 &1626414880
 Rigidbody2D:
   serializedVersion: 2

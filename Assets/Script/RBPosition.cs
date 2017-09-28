@@ -10,6 +10,6 @@ public class RBPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.localPosition = new Vector3(1200, 0, 0);
+        transform.localPosition = new Vector3(1500, 120, 0);
     }
 }
