@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class LRButtonDirector: MonoBehaviour {
 
     GameObject GameObject;
 
-    int offset = 573;
+    int offset = 572;
     int tapCount = 0;
 
     // Use this for initialization

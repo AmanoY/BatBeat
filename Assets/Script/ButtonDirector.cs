@@ -20,4 +20,8 @@ public class ButtonDirector: MonoBehaviour {
     public void BackButtonPush() {
         SceneManager.LoadScene("TitleScene");
     }
+
+    public void TutorialButtonPush() {
+        SceneManager.LoadScene("TutorialScene");
+    }
 }
