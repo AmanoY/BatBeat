@@ -7,7 +7,7 @@ public class LRButtonDirector: MonoBehaviour {
 
     GameObject GameObject;
 
-    int offset = 439;
+    int offset = 573;
     int tapCount = 0;
 
     // Use this for initialization
