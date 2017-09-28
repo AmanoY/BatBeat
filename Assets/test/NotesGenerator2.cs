@@ -263,10 +263,9 @@ public class NotesGenerator2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int difficulty = NotesGenerator.difficulty;
         timer += Time.deltaTime;
         //NormalのNotesを呼び出す
-        if (difficulty == 1)
+        if (GameData.DifficultyChange == 1)
         {
             //EasyのNotesを呼び出す
             for (timeCount = 0; timeCount < timingNormal.Length - 1; timeCount++)
