@@ -29,11 +29,12 @@ public class TouchManager : MonoBehaviour
         //押している最中は削除
         if (touched)
         {
+
             Lane = transform.position;
             Notes = gameObject.transform.position;
-            dir = Lane - Notes;
+            dir = Notes - Lane;
             float d = dir.magnitude;
-
+            Debug.Log(d);
 
             if ( d <= 1.0f)
             {
@@ -87,6 +88,7 @@ public class TouchManager : MonoBehaviour
     void Start()
     {
         perfect = GetComponent<ParticleSystem>();
+        NodePre = GameObject.Find("NotesObjectPrefab 1");
        // perfect.Stop();
     }
 
@@ -175,12 +177,10 @@ public class TouchManager : MonoBehaviour
     //}
     public void TouchButtonDown()
     {
-        Debug.Log("押されたよDown");
         touched = true;
     }
     public void TouchButtonUp()
     {
-        Debug.Log("離したよUp");
         touched = false;
     }
 }
