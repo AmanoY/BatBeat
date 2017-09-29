@@ -609,7 +609,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1024683492}
-        m_MethodName: TutorialButtonPush
+        m_MethodName: SelectBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1024683487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fb742d2f0b25145a14071dac546949, type: 3}
+  m_Script: {fileID: 11500000, guid: 97f7292ab5ea6234198318a10c3cbf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1101819322
@@ -742,7 +742,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1101819327}
-        m_MethodName: BackButtonPush
+        m_MethodName: BackBotton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -795,7 +795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101819322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fb742d2f0b25145a14071dac546949, type: 3}
+  m_Script: {fileID: 11500000, guid: 97f7292ab5ea6234198318a10c3cbf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1348707108

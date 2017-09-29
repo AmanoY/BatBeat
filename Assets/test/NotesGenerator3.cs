@@ -115,7 +115,7 @@ public class NotesGenerator3 : MonoBehaviour {
 
             }
         }
-        if (timer >= 105)
+        if (timer >= 100)
         {
             SceneManager.LoadScene("ClearScene");
         }

@@ -88,6 +88,10 @@ public class TouchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+
+        }
         //if(IsTouchObject(gameObject))
         //{
         //    touched = true;

@@ -17,4 +17,8 @@ public class BackButton : MonoBehaviour {
     {
         SceneManager.LoadScene("TitleScene");
     }
+    public void SelectBack()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
 }
