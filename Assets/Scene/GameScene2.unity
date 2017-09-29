@@ -239,7 +239,7 @@ GameObject:
   - 58: {fileID: 303569416}
   m_Layer: 5
   m_Name: Button3
-  m_TagString: Untagged
+  m_TagString: LB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -818,7 +818,7 @@ GameObject:
   - 58: {fileID: 1210051461}
   m_Layer: 5
   m_Name: Button4
-  m_TagString: Untagged
+  m_TagString: RB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1111,7 +1111,7 @@ GameObject:
   - 58: {fileID: 1253957010}
   m_Layer: 5
   m_Name: Button1
-  m_TagString: Untagged
+  m_TagString: LT
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1634,7 +1634,7 @@ GameObject:
   - 58: {fileID: 1626414879}
   m_Layer: 5
   m_Name: Button2
-  m_TagString: Untagged
+  m_TagString: RT
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
