@@ -131,11 +131,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 475580, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
   m_PrefabInternal: {fileID: 10439420}
---- !u!198 &10439422 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422,
-    type: 2}
-  m_PrefabInternal: {fileID: 10439420}
 --- !u!1 &105133281
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,11 +215,6 @@ Prefab:
 --- !u!4 &123956710 stripped
 Transform:
   m_PrefabParentObject: {fileID: 472226, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  m_PrefabInternal: {fileID: 123956709}
---- !u!198 &123956711 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
-    type: 2}
   m_PrefabInternal: {fileID: 123956709}
 --- !u!1 &182561310
 GameObject:
@@ -369,11 +359,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 472226, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
   m_PrefabInternal: {fileID: 194202991}
---- !u!198 &194202993 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 194202991}
 --- !u!1001 &292984200
 Prefab:
   m_ObjectHideFlags: 0
@@ -419,11 +404,6 @@ Prefab:
 --- !u!4 &292984201 stripped
 Transform:
   m_PrefabParentObject: {fileID: 472226, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  m_PrefabInternal: {fileID: 292984200}
---- !u!198 &292984202 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
-    type: 2}
   m_PrefabInternal: {fileID: 292984200}
 --- !u!1 &303569412
 GameObject:
@@ -633,9 +613,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfectEffect: {fileID: 194202993}
-  goodEffect: {fileID: 1864943546}
-  missEffect: {fileID: 1889259170}
+  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &303569419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,11 +747,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 463682, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
   m_PrefabInternal: {fileID: 333299642}
---- !u!198 &333299644 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30,
-    type: 2}
-  m_PrefabInternal: {fileID: 333299642}
 --- !u!1001 &402489820
 Prefab:
   m_ObjectHideFlags: 0
@@ -818,11 +793,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 472226, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
   m_PrefabInternal: {fileID: 402489820}
---- !u!198 &402489822 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 402489820}
 --- !u!1001 &580678228
 Prefab:
   m_ObjectHideFlags: 0
@@ -868,11 +838,6 @@ Prefab:
 --- !u!4 &580678229 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475580, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
-  m_PrefabInternal: {fileID: 580678228}
---- !u!198 &580678230 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422,
-    type: 2}
   m_PrefabInternal: {fileID: 580678228}
 --- !u!1 &649498169
 GameObject:
@@ -1121,11 +1086,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 463682, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
   m_PrefabInternal: {fileID: 786397825}
---- !u!198 &786397827 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30,
-    type: 2}
-  m_PrefabInternal: {fileID: 786397825}
 --- !u!1001 &913648416
 Prefab:
   m_ObjectHideFlags: 0
@@ -1171,11 +1131,6 @@ Prefab:
 --- !u!4 &913648417 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475580, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
-  m_PrefabInternal: {fileID: 913648416}
---- !u!198 &913648418 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422,
-    type: 2}
   m_PrefabInternal: {fileID: 913648416}
 --- !u!1 &997182828
 GameObject:
@@ -1470,9 +1425,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfectEffect: {fileID: 402489822}
-  goodEffect: {fileID: 333299644}
-  missEffect: {fileID: 913648418}
+  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &1210051464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,9 +1655,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfectEffect: {fileID: 123956711}
-  goodEffect: {fileID: 1479410771}
-  missEffect: {fileID: 580678230}
+  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!58 &1253957010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2217,11 +2172,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 463682, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
   m_PrefabInternal: {fileID: 1479410769}
---- !u!198 &1479410771 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30,
-    type: 2}
-  m_PrefabInternal: {fileID: 1479410769}
 --- !u!1 &1626414875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,9 +2380,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfectEffect: {fileID: 292984202}
-  goodEffect: {fileID: 786397827}
-  missEffect: {fileID: 10439422}
+  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &1626414882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,11 +2514,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 463682, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
   m_PrefabInternal: {fileID: 1864943544}
---- !u!198 &1864943546 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30,
-    type: 2}
-  m_PrefabInternal: {fileID: 1864943544}
 --- !u!1001 &1889259168
 Prefab:
   m_ObjectHideFlags: 0
@@ -2614,11 +2559,6 @@ Prefab:
 --- !u!4 &1889259169 stripped
 Transform:
   m_PrefabParentObject: {fileID: 475580, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
-  m_PrefabInternal: {fileID: 1889259168}
---- !u!198 &1889259170 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422,
-    type: 2}
   m_PrefabInternal: {fileID: 1889259168}
 --- !u!1 &1969118958
 GameObject:
