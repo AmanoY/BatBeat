@@ -13,17 +13,11 @@ public class TouchManager : MonoBehaviour
     float d;
     int Count = 0;
 
-    public ParticleSystem perfect;
-    public ParticleSystem good;
-    public ParticleSystem miss;
+    public ParticleSystem perfectEffect;
+    public ParticleSystem goodEffect;
+    public ParticleSystem missEffect;
 
-    void PerfectDestroy()
-    {
-        Debug.Log("dd");
-
-
-    }
-    private void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
         
         //押している最中は削除
@@ -37,8 +31,8 @@ public class TouchManager : MonoBehaviour
             Debug.Log(d);
             if ( d <= 1.0f)
             {
+                perfectEffect.Play();
                 GetComponent<AudioSource>().Play();
-                Invoke("PerfectDestroy", 1.0f);
                 Debug.Log(d);
                 Destroy(collision.gameObject);
                 gameManeger.PerfectComboCount();
@@ -46,7 +40,7 @@ public class TouchManager : MonoBehaviour
             }
             else if( d <= 3.0f )
             {
-                good.Play();
+                goodEffect.Play();
                 GetComponent<AudioSource>().Play();
                 Debug.Log(d);
                 Destroy(collision.gameObject);
@@ -54,6 +48,7 @@ public class TouchManager : MonoBehaviour
             }
             else if( d<=6.0f)
             {
+                missEffect.Play();
                 Destroy(collision.gameObject);
                 gameManeger.MissComboCount();
             }
@@ -86,7 +81,6 @@ public class TouchManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        perfect = GetComponent<ParticleSystem>();
         NodePre = GameObject.Find("NotesObjectPrefab 1");
        // perfect.Stop();
     }
