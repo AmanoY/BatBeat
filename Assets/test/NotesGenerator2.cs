@@ -272,8 +272,6 @@ public class NotesGenerator2 : MonoBehaviour
 
                 if (timingNormal[timeCount] >= timer - Time.deltaTime / 2.0f && timingNormal[timeCount] <= timer + Time.deltaTime / 2.0f)
                 {
-                    Debug.Log("timingNormal[timeCount]" + timingNormal[timeCount] + "| timer" + timer + "| Time.deltaTime / 2.0f" + Time.deltaTime / 2.0f);
-                    //Debug.Log("timingNormal[timeCount]" + timingNormal[timeCount] + "| timer" + timer + "| Time.deltaTime / 2.0f" + Time.deltaTime / 2.0f);
                     GameObject go = Instantiate(notesPrefab);
                 }
 
