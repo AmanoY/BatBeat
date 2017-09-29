@@ -96,7 +96,7 @@ public class NotesGenerator3 : MonoBehaviour {
     {
 	        //timerに時間を加算させ続ける
         timer += Time.deltaTime;
-        if (timer >= 5 && (Chain))
+        if (timer >= 4 && (Chain))
         {
             GetComponent<AudioSource>().Play();
             Chain = false;
@@ -115,7 +115,7 @@ public class NotesGenerator3 : MonoBehaviour {
 
             }
         }
-        if (timer >= 98)
+        if (timer >= 105)
         {
             SceneManager.LoadScene("ClearScene");
         }
