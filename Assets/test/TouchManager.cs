@@ -4,7 +4,7 @@ using System;
 
 public class TouchManager : MonoBehaviour
 {
-    bool touched;
+    bool touched=false;
     public GameObject NodePre;
     public GameManager gameManeger;
      Vector2 Lane;
@@ -88,23 +88,36 @@ public class TouchManager : MonoBehaviour
         {
             touched = true;
         }
+        if (Input.GetKeyUp(KeyCode.F) && transform.name == "Button1")
+        {
+            touched = false;
+        }
 
         if (Input.GetKeyDown(KeyCode.J) && transform.name == "Button2")
         {
             touched = true;
-
+        }
+        if (Input.GetKeyUp(KeyCode.J) && transform.name == "Button2")
+        {
+            touched = false;
         }
 
         if (Input.GetKeyDown(KeyCode.V) && transform.name == "Button3")
         {
             touched = true;
-
+        }
+        if (Input.GetKeyUp(KeyCode.V) && transform.name == "Button3")
+        {
+            touched = false;
         }
 
         if (Input.GetKeyDown(KeyCode.N) && transform.name == "Button4")
         {
             touched = true;
-
+        }
+        if (Input.GetKeyUp(KeyCode.N) && transform.name == "Button4")
+        {
+            touched = false;
         }
     }
     public void TouchButtonDown()
