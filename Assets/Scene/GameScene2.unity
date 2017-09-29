@@ -1173,11 +1173,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1253957009}
-        m_MethodName: TouchButton
-        m_Mode: 1
+        m_MethodName: OnTriggerStay2D
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1253957010}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Collider2D, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2035,7 +2035,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79094c12d8d173a43ba631cf816eea94, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 74ab1df8ec5706542a0a5c152de96297, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
