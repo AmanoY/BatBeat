@@ -309,7 +309,7 @@ public class NotesGenerator4 : MonoBehaviour {
 
             }
         }
-        if (timer >= 105)
+        if (timer >= 98)
         {
             SceneManager.LoadScene("ClearScene");
         }
