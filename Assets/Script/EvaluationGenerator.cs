@@ -36,6 +36,18 @@ public class EvaluationGenerator : MonoBehaviour {
         Evaluation[1, 2, 3] = 16800;
         Evaluation[1, 2, 4] = 11200;
         Evaluation[1, 2, 5] = 5600;
+
+        Evaluation[2, 1, 1] = 5700;
+        Evaluation[2, 1, 2] = 4880;
+        Evaluation[2, 1, 3] = 3660;
+        Evaluation[2, 1, 4] = 2440;
+        Evaluation[2, 1, 5] = 1220;
+
+        Evaluation[2, 2, 1] = 29000;
+        Evaluation[2, 2, 2] = 24800;
+        Evaluation[2, 2, 3] = 18420;
+        Evaluation[2, 2, 4] = 12280;
+        Evaluation[2, 2, 5] = 6140;
     }
 	
 	// Update is called once per frame
@@ -51,11 +63,11 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 3)
         {
-            ItsmyLifeEasy();
+            ReaperEasy();
         }
         else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 4)
         {
-            ItsmyLifeNormal();
+            ReaperNormal();
         }
         if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 5)
         {
@@ -112,6 +124,62 @@ public class EvaluationGenerator : MonoBehaviour {
             transform.position = A;
         }
         else if (GameData.score >= Evaluation[1, 2, 5])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= 0)
+        {
+            transform.position = C;
+        }
+    }
+
+    public void ReaperEasy()
+    {
+        if (GameData.score == Evaluation[2, 1, 1])
+        {
+            transform.position = SSS;
+        }
+        else if (GameData.score >= Evaluation[2, 1, 2])
+        {
+            transform.position = SS;
+        }
+        else if (GameData.score >= Evaluation[2, 1, 3])
+        {
+            transform.position = S;
+        }
+        else if (GameData.score >= Evaluation[2, 1, 4])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= Evaluation[2, 1, 5])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= 0)
+        {
+            transform.position = C;
+        }
+    }
+
+    public void ReaperNormal()
+    {
+        if (GameData.score == Evaluation[2, 2, 1])
+        {
+            transform.position = SSS;
+        }
+        else if (GameData.score >= Evaluation[2, 2, 2])
+        {
+            transform.position = SS;
+        }
+        else if (GameData.score >= Evaluation[2, 2, 3])
+        {
+            transform.position = S;
+        }
+        else if (GameData.score >= Evaluation[2, 2, 4])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= Evaluation[2, 2, 5])
         {
             transform.position = A;
         }

@@ -1,15 +1,15 @@
 fileFormatVersion: 2
 guid: a924a9fe5d164ef4093b7a08abf3c49b
-timeCreated: 1506489670
+timeCreated: 1506658342
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - NodePre: {instanceID: 0}
   - gameManeger: {instanceID: 0}
-  - perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  - good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
-  - miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
+  - perfectEffect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  - goodEffect: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  - missEffect: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
