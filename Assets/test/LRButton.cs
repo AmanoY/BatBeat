@@ -19,12 +19,12 @@ public class LRButton : MonoBehaviour {
 	}
     public void RButtonDown()
     {
-        Debug.Log("マイナスされたよ");
+        GetComponent<AudioSource>().Play();
         GameData.MusicSelectCount--;
     }
     public void LButtonDown()
     {
-        Debug.Log("プラスされたよ");
+        GetComponent<AudioSource>().Play();
         GameData.MusicSelectCount++;
     }
 }

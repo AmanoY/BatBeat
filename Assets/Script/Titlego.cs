@@ -14,6 +14,7 @@ public class Titlego : MonoBehaviour {
     {
         if (Input.GetMouseButton(0))
         {
+            GetComponent<AudioSource>().Play();
             sceneChange.NextSceneNumber(1);
         }
 	}
