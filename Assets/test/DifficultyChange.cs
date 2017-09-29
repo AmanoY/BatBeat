@@ -33,11 +33,12 @@ public class DifficultyChange : MonoBehaviour {
     {
 
         //cdBn.normalColor = Color;
+        GetComponent<AudioSource>().Play();
         GameData.DifficultyChange = 0;
     }
     public void DIfficultyNormal()
     {
-
+        GetComponent<AudioSource>().Play();
         GameData.DifficultyChange = 1;
     }
 
