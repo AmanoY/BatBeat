@@ -4,7 +4,7 @@
     public static int Maxcombo;
     public static int perfectcombo;
     public static int goodcombo;
-    public static int misscombo;
+    public static int misscombo=0;
     public static int MusicSelectCount;
     public static int DifficultyChange;
     public static int MusicNumber;
