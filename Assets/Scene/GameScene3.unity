@@ -426,9 +426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
-  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
+  perfectEffect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  goodEffect: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  missEffect: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &303569419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,8 +634,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 32.7, y: 145.8}
-  m_SizeDelta: {x: 457, y: 180}
+  m_AnchoredPosition: {x: 10, y: 161}
+  m_SizeDelta: {x: 528, y: 245.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &691690368
 MonoBehaviour:
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -658,7 +658,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4aab0568858c5504aa9dd6abfe18105a, type: 3}
-    m_FontSize: 140
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -747,8 +747,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -42.6, y: -22}
-  m_SizeDelta: {x: 244, y: 162}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 325, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997182830
 MonoBehaviour:
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -771,11 +771,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4aab0568858c5504aa9dd6abfe18105a, type: 3}
-    m_FontSize: 140
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 140
+    m_MinSize: 0
+    m_MaxSize: 200
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1005,9 +1005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
-  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
+  perfectEffect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  goodEffect: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  missEffect: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &1210051464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,9 +1231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
-  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
+  perfectEffect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  goodEffect: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  missEffect: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!58 &1253957010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1504,7 +1504,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 490, y: -144.35}
+  m_AnchoredPosition: {x: 580, y: -145}
   m_SizeDelta: {x: 753.2, y: 288.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400147498
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1528,11 +1528,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4aab0568858c5504aa9dd6abfe18105a, type: 3}
-    m_FontSize: 140
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 140
+    m_MaxSize: 200
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1879,9 +1879,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodePre: {fileID: 174126, guid: 46008c5239dfd6744aaa6cc3a8231664, type: 2}
   gameManeger: {fileID: 105133283}
-  perfect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
-  good: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
-  miss: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
+  perfectEffect: {fileID: 19809344, guid: 263499af9f51ceb4ab717cc0d99e96b5, type: 2}
+  goodEffect: {fileID: 19810620, guid: 392eade6e929993418b18cb2b3260a30, type: 2}
+  missEffect: {fileID: 19860210, guid: bae9c9cfb60be9c4999c2c9f08f01422, type: 2}
 --- !u!114 &1626414882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1999,7 +1999,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -34.97, y: -76}
+  m_AnchoredPosition: {x: -123, y: -80}
   m_SizeDelta: {x: 625.7, y: 277.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969118960
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2023,7 +2023,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4aab0568858c5504aa9dd6abfe18105a, type: 3}
-    m_FontSize: 140
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
