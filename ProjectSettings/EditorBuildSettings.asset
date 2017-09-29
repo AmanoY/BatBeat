@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/SelectScene.unity
   - enabled: 1
-    path: Assets/Scene/MusicSelectScenetest.unity
+    path: Assets/Scene/MusicSelectScene.unity
   - enabled: 1
     path: Assets/Scene/TutorialScene.unity
   - enabled: 1

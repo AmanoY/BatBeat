@@ -74,7 +74,7 @@ ParticleSystem:
     minMaxState: 0
   speed: 1
   randomSeed: 0
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 1
@@ -244,10 +244,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 1207959551
       minMaxState: 0
     startSize:
-      scalar: 1.5
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -394,7 +394,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 0
-    radius: 1
+    radius: 1.3222377
     angle: 25
     length: 5
     boxX: 1
@@ -577,7 +577,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     curve:
-      scalar: 0.7853982
+      scalar: 0.7853981
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -618,35 +618,35 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4281270527
+          rgba: 4279961244
         key1:
           serializedVersion: 2
-          rgba: 4278190335
+          rgba: 4279440301
         key2:
           serializedVersion: 2
-          rgba: 8996009
+          rgba: 249
         key3:
           serializedVersion: 2
-          rgba: 4522239
+          rgba: 9971578
         key4:
           serializedVersion: 2
-          rgba: 0
+          rgba: 6300286
         key5:
           serializedVersion: 2
-          rgba: 0
+          rgba: 329191
         key6:
           serializedVersion: 2
-          rgba: 0
+          rgba: 329191
         key7:
           serializedVersion: 2
           rgba: 0
         ctime0: 3855
-        ctime1: 20239
-        ctime2: 36044
-        ctime3: 60909
-        ctime4: 0
-        ctime5: 0
-        ctime6: 0
+        ctime1: 12336
+        ctime2: 23323
+        ctime3: 35081
+        ctime4: 58789
+        ctime5: 60909
+        ctime6: 60909
         ctime7: 0
         atime0: 0
         atime1: 65535
@@ -656,7 +656,7 @@ ParticleSystem:
         atime5: 0
         atime6: 0
         atime7: 0
-        m_NumColorKeys: 4
+        m_NumColorKeys: 6
         m_NumAlphaKeys: 2
       minGradient:
         key0:
