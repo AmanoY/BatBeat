@@ -25,7 +25,7 @@ public class EvaluationGenerator : MonoBehaviour {
         MusicSelectNumber[3, 0] = 5;
         MusicSelectNumber[3, 1] = 6;
 
-        Evaluation[1, 1, 1] = 10100;
+        Evaluation[1, 1, 1] = 8700;
         Evaluation[1, 1, 2] = 8080;
         Evaluation[1, 1, 3] = 6060;
         Evaluation[1, 1, 4] = 4040;
@@ -48,6 +48,18 @@ public class EvaluationGenerator : MonoBehaviour {
         Evaluation[2, 2, 3] = 18420;
         Evaluation[2, 2, 4] = 12280;
         Evaluation[2, 2, 5] = 6140;
+
+        Evaluation[3, 1, 1] = 15400;
+        Evaluation[3, 1, 2] = 13120;
+        Evaluation[3, 1, 3] = 9840;
+        Evaluation[3, 1, 4] = 6560;
+        Evaluation[3, 1, 5] = 3280;
+
+        Evaluation[3, 2, 1] = 40000;
+        Evaluation[3, 2, 2] = 33680;
+        Evaluation[3, 2, 3] = 25260;
+        Evaluation[3, 2, 4] = 17340;
+        Evaluation[3, 2, 5] = 9760;
     }
 	
 	// Update is called once per frame
@@ -63,19 +75,19 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 3)
         {
-            ReaperEasy();
+            CurseEasy();
         }
         else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 4)
         {
-            ReaperNormal();
+            CurseNormal();
         }
         if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 5)
         {
-            ItsmyLifeEasy();
+            ReaperEasy();
         }
         else if (MusicSelectNumber[GameData.MusicNumber, GameData.DifficultyChange] == 6)
         {
-            ItsmyLifeNormal();
+            ReaperNormal();
         }
     }
     public void ItsmyLifeEasy()
@@ -133,7 +145,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
     }
 
-    public void ReaperEasy()
+    public void CurseEasy()
     {
         if (GameData.score == Evaluation[2, 1, 1])
         {
@@ -161,7 +173,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
     }
 
-    public void ReaperNormal()
+    public void CurseNormal()
     {
         if (GameData.score == Evaluation[2, 2, 1])
         {
@@ -180,6 +192,62 @@ public class EvaluationGenerator : MonoBehaviour {
             transform.position = A;
         }
         else if (GameData.score >= Evaluation[2, 2, 5])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= 0)
+        {
+            transform.position = C;
+        }
+    }
+
+    public void ReaperEasy()
+    {
+        if (GameData.score == Evaluation[3, 1, 1])
+        {
+            transform.position = SSS;
+        }
+        else if (GameData.score >= Evaluation[3, 1, 2])
+        {
+            transform.position = SS;
+        }
+        else if (GameData.score >= Evaluation[3, 1, 3])
+        {
+            transform.position = S;
+        }
+        else if (GameData.score >= Evaluation[3, 1, 4])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= Evaluation[3, 1, 5])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= 0)
+        {
+            transform.position = C;
+        }
+    }
+
+    public void ReaperNormal()
+    {
+        if (GameData.score == Evaluation[3, 2, 1])
+        {
+            transform.position = SSS;
+        }
+        else if (GameData.score >= Evaluation[3, 2, 2])
+        {
+            transform.position = SS;
+        }
+        else if (GameData.score >= Evaluation[3, 2, 3])
+        {
+            transform.position = S;
+        }
+        else if (GameData.score >= Evaluation[3, 2, 4])
+        {
+            transform.position = A;
+        }
+        else if (GameData.score >= Evaluation[3, 2, 5])
         {
             transform.position = A;
         }

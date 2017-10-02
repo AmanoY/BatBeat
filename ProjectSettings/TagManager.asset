@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - MainCamera
+  - LT
+  - RT
+  - LB
+  - RB
   layers:
   - Default
   - TransparentFX

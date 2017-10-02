@@ -115,6 +115,27 @@ public class NotesControl1 : MonoBehaviour {
         yspeed = -0.05f;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.tag);
+        //トリガーエンターしたものがレーンだったら、同じタグにする
+        if (collision.tag=="LT"|| collision.tag == "RT" || collision.tag == "LB" || collision.tag == "RB")
+        {
+            if (collision.GetComponent<TouchManager>())
+            {
+                gameObject.tag = collision.tag;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //タグをもとに戻す
+        gameObject.tag = "Untagged";
+    }
+
+
+
     //public bool TimingCheck()
     //{
     //    if (timeCount > 0)
@@ -126,4 +147,6 @@ public class NotesControl1 : MonoBehaviour {
     //    }
     //    return false;
     //}
+
+
 }

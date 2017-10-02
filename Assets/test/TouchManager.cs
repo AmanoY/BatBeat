@@ -17,6 +17,8 @@ public class TouchManager : MonoBehaviour
     public ParticleSystem goodEffect;
     public ParticleSystem missEffect;
 
+    GameObject[] StayNorts=new GameObject[256];
+
     public void OnTriggerStay2D(Collider2D collision)
     {
 
@@ -117,6 +119,55 @@ public class TouchManager : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.N) && transform.name == "Button4")
         {
+            touched = false;
+        }
+
+        if (touched)
+        {
+            GameObject nearestNorts=new GameObject();
+            foreach (GameObject go in GameObject.FindGameObjectsWithTag(gameObject.tag))
+            {
+                //タグをもつものが自分自身ではないとき
+                if (go!=gameObject)
+                {
+                    if (nearestNorts)
+                    {
+                        //現在最も近いNotesよりも今回のNotesの方が近ければ更新
+                        if (Vector3.Distance(this.transform.position,nearestNorts.transform.position)>Vector3.Distance(this.transform.position,go.transform.position))
+                        {
+                            nearestNorts = go;
+                        }
+                    }else
+                    {
+                        //まだなにも登録されていなければ無条件で最も近いNotesとする
+                        nearestNorts = go;
+                    }
+                }
+            }
+            //最も近いNotesを削除
+            dir = nearestNorts.transform.position - transform.position;
+            float d = dir.magnitude;
+            if (d <= 1.0f)
+            {
+                perfectEffect.Play();
+                GetComponent<AudioSource>().Play();
+                Destroy(nearestNorts);
+                gameManeger.PerfectComboCount();
+
+            }
+            else if (d <= 3.0f)
+            {
+                goodEffect.Play();
+                GetComponent<AudioSource>().Play();
+                Destroy(nearestNorts);
+                gameManeger.GoodComboCount();
+            }
+            else if (d <= 6.0f)
+            {
+                missEffect.Play();
+                Destroy(nearestNorts);
+                gameManeger.MissComboCount();
+            }
             touched = false;
         }
     }
