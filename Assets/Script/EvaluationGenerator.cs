@@ -25,13 +25,13 @@ public class EvaluationGenerator : MonoBehaviour {
         MusicSelectNumber[3, 0] = 5;
         MusicSelectNumber[3, 1] = 6;
 
-        Evaluation[1, 1, 1] = 10100;
+        Evaluation[1, 1, 1] = 9500;
         Evaluation[1, 1, 2] = 8080;
         Evaluation[1, 1, 3] = 6060;
         Evaluation[1, 1, 4] = 4040;
         Evaluation[1, 1, 5] = 2020;
 
-        Evaluation[1, 2, 1] = 27400;
+        Evaluation[1, 2, 1] = 26400;
         Evaluation[1, 2, 2] = 22400;
         Evaluation[1, 2, 3] = 16800;
         Evaluation[1, 2, 4] = 11200;
@@ -92,7 +92,7 @@ public class EvaluationGenerator : MonoBehaviour {
     }
     public void ItsmyLifeEasy()
     {
-        if (GameData.score == Evaluation[1,1,1])
+        if (GameData.score >= Evaluation[1,1,1])
         {
             transform.position = SSS;
         }
@@ -119,7 +119,7 @@ public class EvaluationGenerator : MonoBehaviour {
     }
     public void ItsmyLifeNormal()
     {
-        if (GameData.score == Evaluation[1, 2, 1])
+        if (GameData.score >= Evaluation[1, 2, 1])
         {
             transform.position = SSS;
         }
@@ -147,7 +147,7 @@ public class EvaluationGenerator : MonoBehaviour {
 
     public void CurseEasy()
     {
-        if (GameData.score == Evaluation[2, 1, 1])
+        if (GameData.score >= Evaluation[2, 1, 1])
         {
             transform.position = SSS;
         }
@@ -175,7 +175,7 @@ public class EvaluationGenerator : MonoBehaviour {
 
     public void CurseNormal()
     {
-        if (GameData.score == Evaluation[2, 2, 1])
+        if (GameData.score >= Evaluation[2, 2, 1])
         {
             transform.position = SSS;
         }
@@ -203,7 +203,7 @@ public class EvaluationGenerator : MonoBehaviour {
 
     public void ReaperEasy()
     {
-        if (GameData.score == Evaluation[3, 1, 1])
+        if (GameData.score >= Evaluation[3, 1, 1])
         {
             transform.position = SSS;
         }
@@ -231,7 +231,7 @@ public class EvaluationGenerator : MonoBehaviour {
 
     public void ReaperNormal()
     {
-        if (GameData.score == Evaluation[3, 2, 1])
+        if (GameData.score >= Evaluation[3, 2, 1])
         {
             transform.position = SSS;
         }
