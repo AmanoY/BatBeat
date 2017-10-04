@@ -11,7 +11,6 @@ public class NotesGenerator : MonoBehaviour
     int timeCount = 0;
     public RectTransform clear;
 
-
     //Notesを発生させる時間
     public float[] timingEasy =
     {
@@ -83,36 +82,45 @@ public class NotesGenerator : MonoBehaviour
 
     };
     public GameObject notesPrefab;
+
+    private void Start()
+    {
+       
+    }
     // NotesControl1 Notes;
+
 
 
     // Update is called once per frame
     void Update()
     {
-        //timerに時間を加算させ続ける
-        timer += Time.deltaTime;
-        if (GameData.DifficultyChange == 0)
+        if (GameManager.isPause == true)
         {
-            //EasyのNotesを呼び出す
-            for (timeCount = 0; timeCount < timingEasy.Length - 1; timeCount++)
-            {
 
-                if (timingEasy[timeCount] >= timer - Time.deltaTime / 2 && timingEasy[timeCount] <= timer + Time.deltaTime / 2)
+            //timerに時間を加算させ続ける
+            timer += Time.deltaTime;
+            if (GameData.DifficultyChange == 0)
+            {
+                //EasyのNotesを呼び出す
+                for (timeCount = 0; timeCount < timingEasy.Length - 1; timeCount++)
                 {
 
-                    GameObject go = Instantiate(notesPrefab);
-                }
+                    if (timingEasy[timeCount] >= timer - Time.deltaTime / 2 && timingEasy[timeCount] <= timer + Time.deltaTime / 2)
+                    {
 
+                        GameObject go = Instantiate(notesPrefab);
+                    }
+
+                }
+            }
+            if (timer > 88)
+            {
+                clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
+            }
+            if (timer >= 90)
+            {
+                SceneManager.LoadScene("ClearScene");
             }
         }
-        if (timer > 88)
-        {
-            clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
-        }
-        if (timer >= 90)
-        {
-            SceneManager.LoadScene("ClearScene");
-        }
     }
-
 }

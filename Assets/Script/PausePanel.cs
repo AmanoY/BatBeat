@@ -9,53 +9,47 @@ public class PausePanel : MonoBehaviour
     bool isVisible;
 
 
-   // public GameObject soundManagerPrefab;
-    //SoundManager soundManager;
 
-    // public Slider sliderBGM;
-    // public Slider sliderSE;
     AudioSource menuButtonSound;
 
-    //public void ToggleShow()
-    //{
-    //    if (gameManager.GamePlay())
-    //    {
-    //        if (isVisible)
-    //        {
-    //            Hide();
-    //            gameManager.isPause = false;
-    //        }
-    //        else
-    //        {
-    //            gameManager.isPause = true;
-    //            isVisible = true;
-    //            GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -0);
-    //        }
-    //    }
-    //}
+    public void ToggleShow()
+    {
+            if (isVisible)
+            {
+                Hide();
+                GameManager.isPause = true;
+            }
+            else
+            {
+                GameManager.isPause = false;
+                isVisible = true;
+                GetComponent<RectTransform>().anchoredPosition = new Vector2(0,410);
+            }
+        
+    }
 
-    //public void Hide()
-    //{
-    //    GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 2000);
-    //    isVisible = false;
+    public void Hide()
+    {
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 2000);
+        isVisible = false;
 
-    //}
-    //public void BackButton()
-    //{
-    //    Debug.Log("バックボタンおされた");
-    //    menuButtonSound.PlayOneShot(menuButtonSound.clip);
-    //    gameManager.isPause = false;
-    //    Hide();
-    //}
+    }
+    public void BackButton()
+    {
+        Debug.Log("バックボタンおされた");
+        menuButtonSound.PlayOneShot(menuButtonSound.clip);
+        GameManager.isPause = false;
+        Hide();
+    }
 
-    //public void RetireButton()
-    //{
-    //    Debug.Log("リタイアボタンおされた");
-    //    menuButtonSound.PlayOneShot(menuButtonSound.clip);
-    //    Invoke("LoadSelectScene", 0.5f);
-    //}
-    //    // Use this for initialization
-        void Start()
+    public void RetireButton()
+    {
+        Debug.Log("リタイアボタンおされた");
+        menuButtonSound.PlayOneShot(menuButtonSound.clip);
+        Invoke("LoadSelectScene", 0.5f);
+    }
+
+    void Start()
     {
 
     }

@@ -13,13 +13,9 @@ public class GameManager : MonoBehaviour {
     int PerfectsScore = 100;
     int GoodScore = 50;
 
-    //private bool isGaming = false;
-    //public bool isPause;
+    static public bool isPause;
 
-    //public bool GamePlay()
-    //{
-    //    return isGaming;
-    //}
+
 
     // Use this for initialization
     void Start () {
@@ -29,7 +25,7 @@ public class GameManager : MonoBehaviour {
         MaxComboCount = 0;
         PerfectCount = 0;
         MissCount = 0;
-        //isPause = true;
+        isPause = true;
     }
 	
 	// Update is called once per frame

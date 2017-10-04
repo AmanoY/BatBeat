@@ -6,22 +6,21 @@ public class Menu : MonoBehaviour {
     PausePanel pausePanel;
     AudioSource menuSound;
 
-    //public void Clicked()
-    //{
-    //    Debug.Log("くりっくされたー");
-    //    //ポーズ切り替え
-    //    //pausePanel.ToggleShow();
-    //    menuSound.PlayOneShot(menuSound.clip);
-
-    //}
-
-    // Use this for initialization
-    void Start()
+    public void Clicked()
     {
-    //    pausePanel = GameObject.FindObjectOfType<PausePanel>();
-    //    //メニューパネルの初期位置
-    //    pausePanel.Hide();
-    //    menuSound = GetComponent<AudioSource>();
+        Debug.Log("くりっくされたー");
+        //ポーズ切り替え
+        pausePanel.ToggleShow();
+      //  menuSound.PlayOneShot(menuSound.clip);
+
+    }
+
+   void Start()
+    {
+        pausePanel = GameObject.FindObjectOfType<PausePanel>();
+        //メニューパネルの初期位置
+        pausePanel.Hide();
+        menuSound = GetComponent<AudioSource>();
 
     }
 	

@@ -12,7 +12,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: BatBeat
-  defaultCursor: {fileID: 2800000, guid: 275ff350fcff78d4188d762a160f5563, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 90b9db630079e40419f696a4e42c7969, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
   m_ShowUnitySplashScreen: 1

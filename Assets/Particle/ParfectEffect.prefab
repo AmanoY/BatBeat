@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115366}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.98, y: -2.97, z: 0}
+  m_LocalPosition: {x: 3.672967, y: -0.9867676, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,7 +38,7 @@ ParticleSystem:
   m_GameObject: {fileID: 115366}
   serializedVersion: 5
   lengthInSec: 1
-  simulationSpeed: 1
+  simulationSpeed: 4
   looping: 0
   prewarm: 0
   playOnAwake: 0
@@ -63,7 +63,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 94598950
+  randomSeed: 1285641407
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -87,7 +87,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -356,7 +356,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 3
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -406,7 +406,7 @@ ParticleSystem:
           outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.23880711
+          time: 0.07562581
           value: 1
           inSlope: 0.38067988
           outSlope: 0.38067988
@@ -418,14 +418,14 @@ ParticleSystem:
           outSlope: -0.17166138
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.48985988
+          time: 0.54425746
           value: 1
           inSlope: 0.33795834
           outSlope: 0.33795834
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.7460139
-          value: 0
+          time: 0.96776986
+          value: 1
           inSlope: -1.7499924
           outSlope: -1.7499924
           tangentMode: 0
@@ -1118,7 +1118,19 @@ ParticleSystem:
       minScalar: 0
       maxCurve:
         serializedVersion: 2
-        m_Curve: []
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 1
+          inSlope: -1
+          outSlope: -1
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: -1
+          outSlope: -1
+          tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 0
