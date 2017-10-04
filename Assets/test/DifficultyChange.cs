@@ -10,6 +10,7 @@ public class DifficultyChange : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        GameData.Reset();
         normalColor = GameObject.Find("NormalButton");
         easyColor = GameObject.Find("EasyButton");
         GameData.DifficultyChange = 0;

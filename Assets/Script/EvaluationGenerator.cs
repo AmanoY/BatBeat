@@ -110,7 +110,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[1,1,5])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score>=0)
         {
@@ -137,7 +137,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[1, 2, 5])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score >= 0)
         {
@@ -165,7 +165,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[2, 1, 5])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score >= 0)
         {
@@ -189,7 +189,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[2, 2, 4])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score >= Evaluation[2, 2, 5])
         {
@@ -221,7 +221,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[3, 1, 5])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score >= 0)
         {
@@ -249,7 +249,7 @@ public class EvaluationGenerator : MonoBehaviour {
         }
         else if (GameData.score >= Evaluation[3, 2, 5])
         {
-            transform.position = A;
+            transform.position = B;
         }
         else if (GameData.score >= 0)
         {

@@ -17,7 +17,7 @@ public class GoSelectScene : MonoBehaviour {
         if (Input.GetMouseButtonUp(0))
         {
             SceneManager.LoadScene("MusicSelectScenetest");
-            GameData.Reset();
+            //GameData.Reset();
         }
 	}
 }

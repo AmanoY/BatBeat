@@ -7,7 +7,6 @@ public class BGPManager : MonoBehaviour {
     public GameObject bgp2;
     public GameObject bgp3;
     public GameObject bgp4;
-    public GameObject bgp5;
     int cnt = 0;
 
 
@@ -20,7 +19,7 @@ public class BGPManager : MonoBehaviour {
 	void Update () {
 	    if(Input.GetMouseButtonDown(0))
         {
-            cnt = ++cnt % 2;
+            cnt = ++cnt % 4;
             switch(cnt)
             {
                 case 0:
@@ -29,14 +28,27 @@ public class BGPManager : MonoBehaviour {
                     bgp2.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     bgp3.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     bgp4.GetComponent<SpriteRenderer>().sortingOrder = 0;
-                    bgp5.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                   
                     break;
                 case 1:
                     bgp1.GetComponent<SpriteRenderer>().sortingOrder = 0;
                     bgp2.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                    bgp3.GetComponent<SpriteRenderer>().sortingOrder = 2;
-                    bgp4.GetComponent<SpriteRenderer>().sortingOrder = 2;
-                    bgp5.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                    bgp3.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp4.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                    break;
+                case 2:
+                    bgp1.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp2.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp3.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    bgp4.GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                    break;
+                case 3:
+                    bgp1.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp2.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp3.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                    bgp4.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
                     break;
             }

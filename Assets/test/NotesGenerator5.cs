@@ -2,11 +2,13 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+//ワルツEasy譜面
 public class NotesGenerator5 : MonoBehaviour {
     float timer = 0.0f;
 
     int timeCount = 0;
 
+    public RectTransform Clear;
     bool Chain;
 
     NotesGenerator difficulty;
@@ -166,6 +168,7 @@ public class NotesGenerator5 : MonoBehaviour {
     void Start ()
     {
         Chain = true;
+        Clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(1500, 170);
     }
 	
 	// Update is called once per frame
@@ -191,6 +194,10 @@ public class NotesGenerator5 : MonoBehaviour {
                 }
 
             }
+        }
+        if (timer>118)
+        {
+            Clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
         }
         if (timer >= 120)
         {

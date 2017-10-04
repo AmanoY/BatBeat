@@ -12,6 +12,9 @@ public class TouchManager : MonoBehaviour
      Vector2 dir;
     float d;
     int Count = 0;
+    int CountMemory = 0;
+
+    public ParticleSystem ring;
 
     public ParticleSystem perfectEffect;
     public ParticleSystem goodEffect;
@@ -71,6 +74,7 @@ public class TouchManager : MonoBehaviour
     /// </summary>
     private void OnMouseUp()
     {
+        
         touched = false;
     }
 
@@ -86,6 +90,8 @@ public class TouchManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKeyDown(KeyCode.F) && transform.name == "Button1")
         {
             touched = true;
