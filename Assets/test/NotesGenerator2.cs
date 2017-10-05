@@ -280,29 +280,32 @@ public class NotesGenerator2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        //NormalのNotesを呼び出す
-        if (GameData.DifficultyChange == 1)
+        if (GameManager.isPause == true)
         {
-            //EasyのNotesを呼び出す
-            for (timeCount = 0; timeCount < timingNormal.Length - 1; timeCount++)
+            timer += Time.deltaTime;
+            //NormalのNotesを呼び出す
+            if (GameData.DifficultyChange == 1)
             {
-
-                if (timingNormal[timeCount] >= timer - Time.deltaTime / 2.0f && timingNormal[timeCount] <= timer + Time.deltaTime / 2.0f)
+                //EasyのNotesを呼び出す
+                for (timeCount = 0; timeCount < timingNormal.Length - 1; timeCount++)
                 {
-                    GameObject go = Instantiate(notesPrefab);
+
+                    if (timingNormal[timeCount] >= timer - Time.deltaTime / 2.0f && timingNormal[timeCount] <= timer + Time.deltaTime / 2.0f)
+                    {
+                        GameObject go = Instantiate(notesPrefab);
+                    }
+
                 }
-
             }
-        }
-        if (timer > 88)
-        {
-            clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
-        }
-        if (timer >= 90)
-        {
-            SceneManager.LoadScene("ClearScene");
-        }
+            if (timer > 88)
+            {
+                clear.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 170);
+            }
+            if (timer >= 90)
+            {
+                SceneManager.LoadScene("ClearScene");
+            }
 
+        }
     }
 }
